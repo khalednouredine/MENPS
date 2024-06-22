@@ -42,7 +42,7 @@
 }
 
 .navbar-toggler-icon {
-    background-color: yellow; /* Couleur de l'icône du bouton de basculement */
+     /* Couleur de l'icône du bouton de basculement */
 }
 
 .navbar-nav {
@@ -87,7 +87,9 @@
                     <div class="container justify-content-center">
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-justify" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5"/>
+                              </svg>
                         </button>
                         <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                             <ul class="navbar-nav">
@@ -376,148 +378,190 @@
                                               </div>
                                             </div>
                             
-                                        </div>
+                                     </div>
+
+
+
+                                     <style>
+                                        /* Custom styles for the redesigned section */
+
+.card {
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-body a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-pills .nav-link {
+    color: #4d6886;
+    font-size: smaller;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-pills .nav-link.active {
+    background-color: #4d6886;
+    color: #ffffff;
+}
+
+.nav-pills .nav-link:hover:not(.active) {
+    background-color: #4d6886;
+    color: #ffffff;
+}
+
+.tab-content {
+    padding-bottom: 20px;
+}
+
+.service-title {
+    color: #f46e27;
+    direction: rtl;
+    text-align: right;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.service-list {
+    font-size: medium;
+    font-weight: bold;
+    list-style: none;
+    padding-left: 0;
+}
+
+.service-list li {
+    padding-top: 10px;
+    direction: ltr;
+    text-align: right;
+}
+
+.service-list a {
+    color: #4d6886;
+    text-decoration: none;
+}
+
+.service-list a:hover {
+    color: #f46e27;
+}
+
+                                     </style>
                             
                             
 
-                                        <div class="col-md-8" style="margin-top:20px;border-radius: 20px;"> <!-- 7/12 corresponds approximately to 60% -->
-                                            
-                                            <div class="card mb-3" >
-                                                <img style="padding-top: 30px;padding-left: 20px;padding-right: 20px;" src="images/logoaccueil.jpg"  class="card-img-top" alt="...">
-                                                <div class="card-body">
-                                                <a href="publication.html">
-                                                            <p style="color: #f46e27;direction: rtl; text-align: center; list-style-position: inside;font-size: 15px;">Les Nouvelles mises à jours au seins de la Direction provinciale MENPS de Oued Ed-Dahab</strong> </p>                        
-                                                </a>  
+                                        <div class="col-md-8" style="margin-top:20px;border-radius: 20px;">
+                                            <div class="card mb-3">
+                                                <img src="images/logoaccueil.jpg" class="card-img-top" alt="..." style="border-radius: 20px 20px 0 0;">
+                                                <div class="card-body text-center">
+                                                    <a href="publication.html">
+                                                        <p style="color: #f46e27;direction: rtl; font-size: 15px;">Les Nouvelles mises à jours au seins de la Direction provinciale MENPS de Oued Ed-Dahab</p>
+                                                    </a>
                                                 </div>
-                                        </div>
-                            
-                            
-                            
+                                            </div>
+                                        
+                                            <div class="container" style="background-color: white;border-radius: 15px;padding: 20px;">
+                                                <ul class="nav nav-pills justify-content-center" role="tablist">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link active" data-toggle="pill" href="#service1">service 1</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" data-toggle="pill" href="#service2">service 2</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" data-toggle="pill" href="#service3">service 3</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" data-toggle="pill" href="#service4">service 4</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" data-toggle="pill" href="#service5">service 5</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" data-toggle="pill" href="#service6">service 6</a>
+                                                    </li>
+                                                </ul>
                                               
-                            
-                                    <style>
-                                        .nav-pills .nav-link {
-                                          color: #4d6886; /* Couleur bleu foncé pour le texte des boutons non sélectionnés */
-                                        }
-                                        .nav-pills .nav-link.active {
-                                          background-color: #4d6886; /* Couleur bleu foncé pour le fond des boutons sélectionnés */
-                                          color: #ffffff; /* Couleur blanche pour le texte des boutons sélectionnés */
-                                        }
-                                        .nav-pills .nav-link:not(.active):hover {
-                                          background-color: #4d6886; /* Couleur bleu foncé pour le fond des boutons sélectionnés */
-                                          color: #ffffff;                                        }
-                                      </style>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                                    <div class="container" style="background-color: white;border-radius: 15px;">
-                                        <ul class="nav nav-pills" role="tablist">
-                                          <li class="nav-item">
-                                            <a class="nav-link active" data-toggle="pill" href="#service1" style="font-size: smaller;">service 1</strong></a>
-                                          </li>
-                                          <li class="nav-item">
-                                            <a class="nav-link" data-toggle="pill" href="#service2" style="font-size: smaller;">service 2</strong></a>
-                                          </li>
-                                          <li class="nav-item">
-                                            <a class="nav-link" data-toggle="pill" href="#service3" style="font-size: smaller;">service 3</strong></a>
-                                          </li>
-                                          <li class="nav-item">
-                                            <a class="nav-link" data-toggle="pill" href="#service4" style="font-size: smaller;">service 4</strong></a>
-                                          </li>
-                                          <li class="nav-item">
-                                            <a class="nav-link" data-toggle="pill" href="#service5" style="font-size: smaller;">service 5</strong></a>
-                                          </li>
-                                          <li class="nav-item">
-                                            <a class="nav-link" data-toggle="pill" href="#service6" style="font-size: smaller;">service 6</strong></a>
-                                          </li>
-                                        </ul>
-                                      
-                                        <!-- Tab panes -->
-                                        <div class="tab-content" style="padding-bottom: 10px;">
-                                          <div id="service1" class="container tab-pane active" style=""><br>
-                                            <h5 style="color: #f46e27;direction: rtl; text-align: right; list-style-position: inside;">مصلحة تدبير الموارد البشرية والشؤون الإدارية والمالية:</h5><hr>
-                                            <ul style="font-size: medium; font-weight: bold;">
-                                                       
-                                                <a href="{{ route('service1bureau1') }}" style=" color: #4d6886;padding-top: 10px;direction: rtl; text-align: right; list-style-position: inside;"><li>مكتب تدبير الوضعيات الإدارية والمسار المهني للموظفين</li></a>
-                                                <a href="{{ route('service1bureau2') }}"style=" color: #4d6886;padding-top: 10px;direction: rtl; text-align: right; list-style-position: inside;"><li>مكتب الحركات الانتقالية وتدبير الخصاص</li></a>
-                                                <a href="{{ route('service1bureau3') }}"style=" color: #4d6886;padding-top: 10px;direction: rtl; text-align: right; list-style-position: inside;"><li>مكتب الرخص وتدبير وتحيين المعطيات وتتبع نظام مسير</li></a> 
-                                                <a href="{{ route('service1bureau4') }}"style=" color: #4d6886;padding-top: 10px;direction: rtl; text-align: right; list-style-position: inside;"><li>مكتب التكوين المستمر والتعويضات العائلية وتحويل الأجرة</li></a>
-                                                <a href="{{ route('service1bureau5') }}"style=" color: #4d6886;padding-top: 10px;direction: rtl; text-align: right; list-style-position: inside;"><li>مكتب البرمجة والصفقات العمومية</li></a>                              
-                                                <a href="{{ route('service1bureau6') }}l"style=" color: #4d6886;padding-top: 10px;direction: rtl; text-align: right; list-style-position: inside;"><li>مكتب البرمجة والصفقات العمومية</li></a>
-                                                <a href="{{ route('service1bureau7') }}"style=" color: #4d6886;padding-top: 10px;direction: rtl; text-align: right; list-style-position: inside;"><li>مكتب البرمجة والصفقات العمومية</li></a>
-                                                <a href="{{ route('service1bureau8') }}"style=" color: #4d6886;padding-top: 10px;direction: rtl; text-align: right; list-style-position: inside;"><li>مكتب الصيانة والتسيير</li></a>
-                                                <a href="{{ route('service1bureau9') }}"style=" color: #4d6886;padding-top: 10px;direction: rtl; text-align: right; list-style-position: inside;"><li>مكتب الاقتصاد والدعم الاجتماعي</li></a>
-                                                <a href="{{ route('service1bureau10') }}"style=" color: #4d6886;padding-top: 10px;direction: rtl; text-align: right; list-style-position: inside;"><li>مكتب المحاسبة</li></a>
-                                                <a href="{{ route('service1bureau11') }}"style=" color: #4d6886;padding-top: 10px;direction: rtl; text-align: right; list-style-position: inside;"><li>مكتب التجهيز والبناءات</li></a>
-                                                <a href="{{ route('service1bureau12') }}"style=" color: #4d6886;padding-top: 10px;direction: rtl; text-align: right; list-style-position: inside;"><li>مكتب الممتلكات والسكنيات</li></a>
-                                                <a href="{{ route('service1bureau13') }}"style=" color: #4d6886;padding-top: 10px;direction: rtl; text-align: right; list-style-position: inside;"><li>مكتب التوثيق وتدبير الأرشيف والمستندات</li></a>
-                                            </ul>    
-                                            </div>
-                                          <div id="service2" class="container tab-pane fade"><br>
-                                            <h5 style="color: #f46e27;direction: rtl; text-align: right; list-style-position: inside;">مصلحة الشؤون التربوية والتخطيط والخريطة المدرسية:</h5><hr>
-                                            <ul style="font-size: medium; font-weight: bold;color: #4d6886;">
-                                                       
-                                                <a href="{{ route('service2bureau1') }}" style=" color: #4d6886;padding-top: 10px;direction: rtl; text-align: right; list-style-position: inside;"><li>كتابة المصلحة</li></a>
-                                                <a href="{{ route('service2bureau2') }}" style=" color: #4d6886;padding-top: 10px;direction: rtl; text-align: right; list-style-position: inside;"><li>مكتب العمل التربوي</li></a>
-                                                <a href="{{ route('service2bureau3') }}" style=" color: #4d6886;padding-top: 10px;direction: rtl; text-align: right; list-style-position: inside;"><li>مكتب الارتقاء بالحياة المدرسية</li></a> 
-                                                <a href="{{ route('service2bureau4') }}" style=" color: #4d6886;padding-top: 10px;direction: rtl; text-align: right; list-style-position: inside;"><li>مكتب الارتقاء بالرياضة المدرسية</li></a>
-                                                <a href="{{ route('service2bureau5') }}"style=" color: #4d6886;padding-top: 10px;direction: rtl; text-align: right; list-style-position: inside;"><li>مكتب الخريطة المدرسية</li></a>                              
-                                                <a href="{{ route('service2bureau6') }}"style="color: #4d6886; padding-top: 10px;direction: rtl; text-align: right; list-style-position: inside;"><li>مكتب الإحصاء والدراسات</li></a>
-                                                <a href="{{ route('service2bureau7') }}"style=" color: #4d6886;padding-top: 10px;direction: rtl; text-align: right; list-style-position: inside;"><li>مكتب الارتقاء بالتعليم الأولي والتعليم الخصوصي</li></a>
-                                                <a href="{{ route('service2bureau8') }}"style="color: #4d6886; padding-top: 10px;direction: rtl; text-align: right; list-style-position: inside;"><li>مكتب التربية الدامجة</li></a>
-                                                <a href="{{ route('service2bureau9') }}"style=" color: #4d6886;padding-top: 10px;direction: rtl; text-align: right; list-style-position: inside;"><li>مكتب الصحة المدرسية</li></a>
-                                            </ul>    
-                                            </div>
-                                          <div id="service3" class="container tab-pane fade"><br>
-                                            <h5 style="color: #f46e27;direction: rtl; text-align: right; list-style-position: inside;">مصلحة تأطير المؤسسات التعليمية والتوجيه:</h5><hr>
-                                            <ul style="font-size: medium; font-weight: bold;">
-                                                       
-                                                <a href="{{ route('service3bureau1') }}" style=" color: #4d6886;padding-top: 10px;direction: rtl; text-align: right; list-style-position: inside;"><li>كتابة المصلحة</li></a>
-                                                <a href="{{ route('service3bureau2') }}"style="color: #4d6886; padding-top: 10px;direction: rtl; text-align: right; list-style-position: inside;"><li>مكتب التوجيه المدرسي   والمهني والجامعي</li></a>
-                                                <a href="{{ route('service3bureau3') }}"style="color: #4d6886; padding-top: 10px;direction: rtl; text-align: right; list-style-position: inside;"><li>مكتب تأطير المؤسسات التعليمية</li></a> 
-                                                <a href="{{ route('service3bureau4') }}"style=" color: #4d6886;padding-top: 10px;direction: rtl; text-align: right; list-style-position: inside;"><li>مكتب الارتقاء بالتربية غير النظامية</li></a>
-                                            </ul>    
-                                            </div>
-                                          <div id="service4" class="container tab-pane fade"><br>
-                                            <h5 style="color: #f46e27;direction: rtl; text-align: right; list-style-position: inside;">تتكون مصلحة تأطير المؤسسات التعليمية والتوجيه من المكاتب التالية:</h5><hr>
-                                            <ul style="font-size: medium; font-weight: bold;">
-                                                       
-                                                <a href="{{ route('service4bureau1') }}"style="color: #4d6886; padding-top: 10px;direction: rtl; text-align: right; list-style-position: inside;"><li>مكتب الشؤون القانونية</li></a>
-                                                <a href="{{ route('service4bureau2') }}"style=" color: #4d6886;padding-top: 10px;direction: rtl; text-align: right; list-style-position: inside;"><li>مكتب التواصل والاستقبال</li></a>
-                                                <a href="{{ route('service4bureau3') }}"style=" color: #4d6886;padding-top: 10px;direction: rtl; text-align: right; list-style-position: inside;"><li>مكتب الحوادث المدرسية والتأمين المدرسي</li></a> 
-                                                <a href="{{ route('service4bureau4') }}"style="color: #4d6886; padding-top: 10px;direction: rtl; text-align: right; list-style-position: inside;"><li>مكتب الشراكة والتعاون </li></a>
-                                            </ul>    
-                                            </div>
-                                          <div id="service5" class="container tab-pane fade"><br>
-                                            <h5 style="color: #f46e27;direction: rtl; text-align: right; list-style-position: inside;">المركز الإقليمي للامتحانات:</h5><hr>
-                                            <ul style="font-size: medium; font-weight: bold;">
-                                                       
-                                                <a href="{{ route('service5bureau1') }}" style=" color: #4d6886;padding-top: 10px;direction: rtl; text-align: right; list-style-position: inside;"><li>مكتب الأرشيف والرقمنة</li></a>
-                                                <a href="{{ route('service5bureau2') }}"style="color: #4d6886; padding-top: 10px;direction: rtl; text-align: right; list-style-position: inside;"><li>مكتب الامتحانات المهنية والمدرسية</li></a>
-                                            </ul>    
-                                            </div>
-                                          <div id="service6" class="container tab-pane fade"><br>
-                                            <h5 style="color: #f46e27;direction: rtl; text-align: right; list-style-position: inside;">المركز الإقليمي لمنظومة الاعلام:</h5><hr>
-                                            <ul style="font-size: medium; font-weight: bold;">
-                                                       
-                                                <a href="{{ route('service6bureau1') }}" style="color: #4d6886; padding-top: 10px;direction: rtl; text-align: right; list-style-position: inside;"><li>المكتب الإقليمي لمنظومة الاعلام</li></a>
-                                                <a href="{{ route('service6bureau2') }}"style=" color: #4d6886;padding-top: 10px;direction: rtl; text-align: right; list-style-position: inside;"><li>المنسقة الإقليمية لبرنامج جيني</li></a>
-                                            </ul>    
+                                                <!-- Tab panes -->
+                                                <div class="tab-content mt-3">
+                                                    <div id="service1" class="container tab-pane active"><br>
+                                                        <h5 class="service-title">مصلحة تدبير الموارد البشرية والشؤون الإدارية والمالية:</h5>
+                                                        <hr>
+                                                        <ul class="service-list">
+                                                            <li><a href="{{ route('service1bureau1') }}">مكتب تدبير الوضعيات الإدارية والمسار المهني للموظفين</a></li>
+                                                            <li><a href="{{ route('service1bureau2') }}">مكتب الحركات الانتقالية وتدبير الخصاص</a></li>
+                                                            <li><a href="{{ route('service1bureau3') }}">مكتب الرخص وتدبير وتحيين المعطيات وتتبع نظام مسير</a></li>
+                                                            <li><a href="{{ route('service1bureau4') }}">مكتب التكوين المستمر والتعويضات العائلية وتحويل الأجرة</a></li>
+                                                            <li><a href="{{ route('service1bureau5') }}">مكتب البرمجة والصفقات العمومية</a></li>
+                                                            <li><a href="{{ route('service1bureau6') }}">مكتب البرمجة والصفقات العمومية</a></li>
+                                                            <li><a href="{{ route('service1bureau7') }}">مكتب البرمجة والصفقات العمومية</a></li>
+                                                            <li><a href="{{ route('service1bureau8') }}">مكتب الصيانة والتسيير</a></li>
+                                                            <li><a href="{{ route('service1bureau9') }}">مكتب الاقتصاد والدعم الاجتماعي</a></li>
+                                                            <li><a href="{{ route('service1bureau10') }}">مكتب المحاسبة</a></li>
+                                                            <li><a href="{{ route('service1bureau11') }}">مكتب التجهيز والبناءات</a></li>
+                                                            <li><a href="{{ route('service1bureau12') }}">مكتب الممتلكات والسكنيات</a></li>
+                                                            <li><a href="{{ route('service1bureau13') }}">مكتب التوثيق وتدبير الأرشيف والمستندات</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div id="service2" class="container tab-pane fade"><br>
+                                                        <h5 class="service-title">مصلحة الشؤون التربوية والتخطيط والخريطة المدرسية:</h5>
+                                                        <hr>
+                                                        <ul class="service-list">
+                                                            <li><a href="{{ route('service2bureau1') }}">كتابة المصلحة</a></li>
+                                                            <li><a href="{{ route('service2bureau2') }}">مكتب العمل التربوي</a></li>
+                                                            <li><a href="{{ route('service2bureau3') }}">مكتب الارتقاء بالحياة المدرسية</a></li>
+                                                            <li><a href="{{ route('service2bureau4') }}">مكتب الارتقاء بالرياضة المدرسية</a></li>
+                                                            <li><a href="{{ route('service2bureau5') }}">مكتب الخريطة المدرسية</a></li>
+                                                            <li><a href="{{ route('service2bureau6') }}">مكتب الإحصاء والدراسات</a></li>
+                                                            <li><a href="{{ route('service2bureau7') }}">مكتب الارتقاء بالتعليم الأولي والتعليم الخصوصي</a></li>
+                                                            <li><a href="{{ route('service2bureau8') }}">مكتب التربية الدامجة</a></li>
+                                                            <li><a href="{{ route('service2bureau9') }}">مكتب الصحة المدرسية</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div id="service3" class="container tab-pane fade"><br>
+                                                        <h5 class="service-title">مصلحة تأطير المؤسسات التعليمية والتوجيه:</h5>
+                                                        <hr>
+                                                        <ul class="service-list">
+                                                            <li><a href="{{ route('service3bureau1') }}">كتابة المصلحة</a></li>
+                                                            <li><a href="{{ route('service3bureau2') }}">مكتب التوجيه المدرسي   والمهني والجامعي</a></li>
+                                                            <li><a href="{{ route('service3bureau3') }}">مكتب تأطير المؤسسات التعليمية</a></li>
+                                                            <li><a href="{{ route('service3bureau4') }}">مكتب الارتقاء بالتربية غير النظامية</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div id="service4" class="container tab-pane fade"><br>
+                                                        <h5 class="service-title">تتكون مصلحة تأطير المؤسسات التعليمية والتوجيه من المكاتب التالية:</h5>
+                                                        <hr>
+                                                        <ul class="service-list">
+                                                            <li><a href="{{ route('service4bureau1') }}">مكتب الشؤون القانونية</a></li>
+                                                            <li><a href="{{ route('service4bureau2') }}">مكتب التواصل والاستقبال</a></li>
+                                                            <li><a href="{{ route('service4bureau3') }}">مكتب الحوادث المدرسية والتأمين المدرسي</a></li>
+                                                            <li><a href="{{ route('service4bureau4') }}">مكتب الشراكة والتعاون</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div id="service5" class="container tab-pane fade"><br>
+                                                        <h5 class="service-title">المركز الإقليمي للامتحانات:</h5>
+                                                        <hr>
+                                                        <ul class="service-list">
+                                                            <li><a href="{{ route('service5bureau1') }}">مكتب الأرشيف والرقمنة</a></li>
+                                                            <li><a href="{{ route('service5bureau2') }}">مكتب الامتحانات المهنية والمدرسية</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div id="service6" class="container tab-pane fade"><br>
+                                                        <h5 class="service-title">المركز الإقليمي لمنظومة الاعلام:</h5>
+                                                        <hr>
+                                                        <ul class="service-list">
+                                                            <li><a href="{{ route('service6bureau1') }}">المكتب الإقليمي لمنظومة الاعلام</a></li>
+                                                            <li><a href="{{ route('service6bureau2') }}">المنسقة الإقليمية لبرنامج جيني</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                      </div>
-                                    
-                                    
-                                    
-                                    
-                                           
-                                        </div>
+                                        
                             
                             
                             
