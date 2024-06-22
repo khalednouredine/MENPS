@@ -185,6 +185,61 @@
                                           background-color: #ffffff; /* Couleur bleu foncé pour le fond des boutons sélectionnés */
                                           color: #4d6886; /* Couleur blanche pour le texte des boutons sélectionnés */
                                         }
+                                        /* Styles pour améliorer le carrousel et les cartes */
+
+.carousel-inner {
+    margin-bottom: 20px;
+}
+
+.carousel-item .card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-item .card-img-top {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.carousel-item .card-body {
+    background-color: #f8f9fa;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 20px;
+    text-align: center;
+}
+
+.carousel-item .card-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.carousel-item .card-text {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+.card {
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.card .card-title {
+    font-size: medium;
+}
+
+.card-body img {
+    width: 50px;
+    margin: 10px 0;
+}
+
+.card-body hr {
+    margin: 10px 0;
+    border-top: 2px solid #eee;
+}
+
                                       </style>
 
 
@@ -196,62 +251,100 @@
                                             
                                             <div class="container mt-3">
                                                 <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-                                                    <div class="carousel-inner" style="background-color: white;border-radius:15px;margin-bottom:20px;">
-                                                        <div  class="carousel-item active">
-                                                          <p style="margin-top: 10px;margin-left: 20px;font-size: smaller;"> <strong> Ecole primaire autonome <br>مدرسة ابتدائية مستقلة</strong> </p>
-
-                                                          <img style="width: 100%;border-top-left-radius: 15px;border-top-right-radius: 15px;" src="images/imag_college.jpg"  alt="First slide">
-                                                        </div>
-                                                        <div class="carousel-item">
-                                                          <p style="margin-top: 10px;margin-left: 20px;font-size: smaller;"><strong>Délégation Provinciale  du MEN <br> النيابة الإقليمية لوزارة التربية الوطنية</strong>   </p>
-
-                                                          <img style="width: 100%;border-top-left-radius: 15px;border-top-right-radius: 15px;" src="images/imag_preprim.jpg" alt="Second slide">
-                                                        </div>
-                                                        <div class="carousel-item">
-                                                          <p style="margin-top: 10px;margin-left: 20px;font-size: smaller;"> <strong>Lycée collègial enseignement général <br> الثانوية الإعدادية للتعليم العام</strong>  </p>
-
-                                                          <img style="width: 100%;border-top-left-radius: 15px;border-top-right-radius: 15px;" src="images/imag_secqualif.jpg" alt="Third slide">
-                                                        </div>
-                                                        <div class="carousel-item">
-                                                          <p style="margin-top: 10px;margin-left: 20px;font-size: smaller;"><strong>Lycée qualifiant enseignement général <br> الثانوية الثأهيلية للتعليم العام</strong>  </p>
-
-                                                          <img style="width: 100%;border-top-left-radius: 15px;border-top-right-radius: 15px;" src="images/imag_secqualif.jpg" alt="fourth slide">
-                                                        </div>
-                                                        <div class="carousel-item">
-                                                          <p style="margin-top: 10px;margin-left: 20px;font-size: smaller;"> <strong>Académie Régionale de l'Education <br> الأكاديمية الجهوية للتربية والتكوين</strong>  </p>
-
-                                                          <img style="width: 100%;border-top-left-radius: 15px;border-top-right-radius: 15px;" src="images/imag_secqualif.jpg" alt="fifth slide">
-                                                        </div>
-                                                        <div class="carousel-item">
-                                                          <p style="margin-top: 10px;margin-left: 20px;font-size: smaller;"> <strong>Lycée qualifiant de référence <br> الثانوية الثأهيلية المرجعية</strong>  </p>
-
-                                                          <img style="width: 100%;border-top-left-radius: 15px;border-top-right-radius: 15px;" src="images/imag_secqualif.jpg" alt="sixth slide">
-                                                        </div>
-                                                        <div class="carousel-item">
-                                                          <p style="margin-top: 10px;margin-left: 20px; font-size: smaller;"><strong>Centre Régional des Métiers de l'Education <br>المركز الجهوي لمهن التربية والتكوين</strong>   </p>
-
-                                                          <img style="width: 100%;border-top-left-radius: 15px;border-top-right-radius: 15px;" src="images/imag_secqualif.jpg" alt="seventh slide">
-                                                        </div>
-                                                      </div>
-                                                     <div class="card text-center mb-3" style="border-radius: 15px;">
+                                                    <div class="carousel-inner" style="margin-bottom: 20px;">
+                                                        <div class="carousel-item active">
+                                                            <div class="card">
+                                                                <img class="card-img-top" src="images/imag_college.jpg" alt="First slide">
                                                                 <div class="card-body">
-                                                                  <h5 class="card-title" style="font-size: medium;"><strong>الموقع</strong> </h5><hr>
-                                                                  <a target="_blank" href="https://www.google.com/maps/place/D%C3%A9l%C3%A9gation+du+Minist%C3%A8re+de+L'%C3%A9ducation+Nationale/@23.6996508,-15.9307916,17z/data=!4m6!3m5!1s0xc224831d96aaaab:0xe57fc6f0394ca6ab!8m2!3d23.6996508!4d-15.9307916!16s%2Fg%2F11kj8_zs5c?entry=ttu" class="card-text"><img src="images/icone-geolocal.png"  alt="" style="width: 50px;"></a>
-                                                                                                     </div><hr style="height:2px;">
-                                                                <div class="card-body">
-                                                                  <h5 class="card-title" style="font-size: medium;"><strong>مؤسسات</strong></h5><hr>
-                                                                  <a href="Academies.html"  class="card-text"><img src="images/edifice-icone.gif"  alt="" style="width: 50px;"></a>
-                                                                                                  </div>
+                                                                    <h5 class="card-title">Ecole primaire autonome</h5>
+                                                                    <p class="card-text">مدرسة ابتدائية مستقلة</p>
+                                                                </div>
                                                             </div>
-                                                  </div>
-                                                  <!-- Script pour activer le carrousel -->
-                                                  <script>
-                                                    $(document).ready(function(){
-                                                      $('.carousel').carousel({
-                                                        interval: 3000 // Change l'intervalle de défilement à 3 secondes (3000 ms)
-                                                      });
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <div class="card">
+                                                                <img class="card-img-top" src="images/imag_preprim.jpg" alt="Second slide">
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">Délégation Provinciale du MEN</h5>
+                                                                    <p class="card-text">النيابة الإقليمية لوزارة التربية الوطنية</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <div class="card">
+                                                                <img class="card-img-top" src="images/imag_secqualif.jpg" alt="Third slide">
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">Lycée collègial enseignement général</h5>
+                                                                    <p class="card-text">الثانوية الإعدادية للتعليم العام</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <div class="card">
+                                                                <img class="card-img-top" src="images/imag_secqualif.jpg" alt="Fourth slide">
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">Lycée qualifiant enseignement général</h5>
+                                                                    <p class="card-text">الثانوية الثأهيلية للتعليم العام</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <div class="card">
+                                                                <img class="card-img-top" src="images/imag_secqualif.jpg" alt="Fifth slide">
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">Académie Régionale de l'Education</h5>
+                                                                    <p class="card-text">الأكاديمية الجهوية للتربية والتكوين</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <div class="card">
+                                                                <img class="card-img-top" src="images/imag_secqualif.jpg" alt="Sixth slide">
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">Lycée qualifiant de référence</h5>
+                                                                    <p class="card-text">الثانوية الثأهيلية المرجعية</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <div class="card">
+                                                                <img class="card-img-top" src="images/imag_secqualif.jpg" alt="Seventh slide">
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">Centre Régional des Métiers de l'Education</h5>
+                                                                    <p class="card-text">المركز الجهوي لمهن التربية والتكوين</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="card text-center mb-3" style="border-radius: 15px;">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title"><strong>الموقع</strong></h5>
+                                                        <hr>
+                                                        <a target="_blank" href="https://www.google.com/maps/place/D%C3%A9l%C3%A9gation+du+Minist%C3%A8re+de+L'%C3%A9ducation+Nationale/@23.6996508,-15.9307916,17z/data=!4m6!3m5!1s0xc224831d96aaaab:0xe57fc6f0394ca6ab!8m2!3d23.6996508!4d-15.9307916!16s%2Fg%2F11kj8_zs5c?entry=ttu" class="card-text">
+                                                            <img src="images/icone-geolocal.png" alt="Geolocation Icon" style="width: 50px;">
+                                                        </a>
+                                                    </div>
+                                                    <hr style="height: 2px;">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title"><strong>مؤسسات</strong></h5>
+                                                        <hr>
+                                                        <a href="Academies.html" class="card-text">
+                                                            <img src="images/edifice-icone.gif" alt="Institution Icon" style="width: 50px;">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                
+                                                <!-- Script pour activer le carrousel -->
+                                                <script>
+                                                    $(document).ready(function () {
+                                                        $('.carousel').carousel({
+                                                            interval: 3000 // Change l'intervalle de défilement à 3 secondes (3000 ms)
+                                                        });
                                                     });
-                                                  </script>
+                                                </script>
+                                                
                                                 
                                                 <div class="card text-center mb-3" style="width: 100%;border-radius: 20px;">
                                                 <div class="card-body">
@@ -264,15 +357,13 @@
         <div class="overflow-scroll">
             <div>
                 <ul style="padding: 0; list-style: none; text-align: center;">
-                    @foreach($posts as $post)
                     <li style="direction: rtl; margin-bottom: 10px;">
-                        <a style="color:#4d6886; display: block; text-align: center;" href="{{ route('publications') }}">
+                        <a style="color:#4d6886; display: block; text-align: center;" href="publication.html">
                             <p style="direction: rtl; list-style-position: inside; margin: 0; font-size:smaller;">
-                                {{ $post->title }}</strong><br>
+                                
                             </p>
                         </a>
                     </li>
-                    @endforeach
                 </ul>
             </div>
         </div>
