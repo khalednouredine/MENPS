@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+    </style>
+    <style>
+        .nav-link {
+            text-decoration: none;
+            color: white;
+            background-color: #4d6886;
+            border-radius: 5px;
+        }
+        .nav-link:hover{
+            background-color: white;
+            color: #aca29e;
+        }
+
+        .nav-link svg {
+            transition: fill 0.2s;
+            fill: white;
+        }
+
+        .nav-link .icon-default {
+            display: inline;
+        }
+
+        .nav-link .icon-hover {
+            display: none;
+        }
+
+        .nav-link:hover .icon-default {
+            display: none;
+        }
+
+        .nav-link:hover{
+            background-color: #4d6886;
+        }
+
+        nav {
+            background-color: #343a40;
+            width: 100%;
+            text-align:center;
+            border-radius:20px;
+            
+            
+            
+        }
+    </style>
+     <style>
+        .navbar-nav {
+            margin: 0 auto; /* Centrer les éléments de la barre de navigation */
+            color:white;
+        }
+    </style>
+</head>
+<body style="background-image:url('../images/fond.gif') ;margin-left:15px;">
+<div id="container" >
+    <div id="header">
+        <div class="content">
+        <nav style="height: 40px;padding-top: 5px;">
+        <a href="../index.html" id="home-link" style="color: white;text-decoration: none;background-color: #4d6886;padding-right: 5px;padding-bottom: 5px;padding-top: 2px;padding-left: 10px;margin-right: 10px;border-radius: 5px;">
+            accueil
+           
+            <svg style="color: white;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-houses-fill icon-hover" viewBox="0 0 16 16">
+                <path d="M7.207 1a1 1 0 0 0-1.414 0L.146 6.646a.5.5 0 0 0 .708.708L1 7.207V12.5A1.5 1.5 0 0 0 2.5 14h.55a2.5 2.5 0 0 1-.05-.5V9.415a1.5 1.5 0 0 1-.56-2.475l5.353-5.354z"/>
+                <path d="M8.793 2a1 1 0 0 1 1.414 0L12 3.793V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v3.293l1.854 1.853a.5.5 0 0 1-.708.708L15 8.207V13.5a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 4 13.5V8.207l-.146.147a.5.5 0 1 1-.708-.708z"/>
+            </svg>
+        </a>
+       <a  href="../login.html" id="register-link" style="color: white;text-decoration: none;background-color: #4d6886;padding-right: 5px;padding-bottom: 5px;padding-top: 2px;padding-left: 10px;border-radius: 5px;">
+        connexion
+                
+                <svg style="color: white;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill-add icon-hover" viewBox="0 0 16 16">
+                    <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.5-5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 1 0m-2-6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                    <path d="M2 13c0 1 1 1 1 1h5.256A4.5 4.5 0 0 1 8 12.5a4.5 4.5 0 0 1 1.544-3.393Q8.844 9.002 8 9c-5 0-6 3-6 4s1 1 1 1z"/>
+                </svg>
+        </a>
+    </nav>
+                                        
+
+        
+        
+
+
+    <!-- Logo Image Section -->
+    <div id="DeltaSiteLogo" style="text-align:center;padding-top:15px;padding-bottom:20px;">
+        <img style="border-radius: 20px; width: 500px; height: 100px;" src="../images/logoaccueil.jpg" alt="الصفحة الرئيسية" />
+    </div>
+    
+
+    <nav class="navbar">
+        <div>
+            <a class="nav-link" href="#" id="navbarDropdownMenuLink">الوزارة</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="width: 100%;text-align: right;">
+                <a class="dropdown-item" href="#">هيكلة القطاع</a>
+                <a class="dropdown-item" href="#">السيد الوزير</a>
+                <a class="dropdown-item" href="#">هيكلة الإدارة المركزية</a>
+            </div>
+        </div>
+
+        <div>
+            <a class="nav-link" href="#" id="navbarDropdownMenuLink2">التوجهات الاستراتيجية الكبرى</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2" style="width: 100%;text-align: right;">
+                <a class="dropdown-item" href="#">توجهات</a>
+                <a class="dropdown-item" href="#">خطب ملكية سامية</a>
+                <a class="dropdown-item" href="#">الميثاق الوطني للتربية والتكوين</a>
+            </div>
+        </div>
+
+        <div>
+            <a class="nav-link" href="#" id="navbarDropdownMenuLink3">التربية الوطنية</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink3" style="width: 100%;text-align: right;">
+                <a class="dropdown-item" href="#">التعليم الأولي</a>
+                <a class="dropdown-item" href="ens-preprim.html">التعليم الابتدائي</a>
+                <a class="dropdown-item" href="Projet-Curriculum-LagueAmazighe2021.html">مشروع المنهاج الجديد للغة الأمازيغية بالابتدائي-2021</a>
+            </div>
+        </div>
+
+        <div>
+            <a class="nav-link" href="#" id="navbarDropdownMenuLink4">الرياضة</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink4" style="width: 100%;text-align: right;">
+                <a class="dropdown-item" href="#/Fr/Pages/sportsco.aspx" target="_blank">الرياضة المدرسية</a>
+                <a class="dropdown-item" href="https://www.frmss-dpss.com/الاستقبال/">الجامعة الملكية المغربية للرياضة المدرسية</a>
+                <a class="dropdown-item" href="Prog-gouv-sport2126.html">الرياضة في البرنامج الحكومي 2021-2026</a>
+            </div>
+        </div>
+    </nav>
+    
+    
+     <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var menuLinks = document.querySelectorAll('.nav-link');
+
+            menuLinks.forEach(function (menuLink) {
+                menuLink.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    var menuContent = this.nextElementSibling;
+                    toggleMenu(menuContent);
+                    toggleActive(this);
+                });
+            });
+
+            function toggleMenu(menuContent) {
+                var isShowing = menuContent.style.display === 'block';
+                closeAllMenus();
+                if (!isShowing) {
+                    menuContent.style.display = 'block';
+                }
+            }
+
+            function closeAllMenus() {
+                var allMenuContents = document.querySelectorAll('.dropdown-menu');
+                allMenuContents.forEach(function (menuContent) {
+                    menuContent.style.display = 'none';
+                });
+            }
+
+            function toggleActive(clickedLink) {
+                menuLinks.forEach(function (menuLink) {
+                    menuLink.classList.remove('active');
+                });
+                clickedLink.classList.add('active');
+            }
+
+            document.addEventListener('click', function (event) {
+                if (!event.target.classList.contains('nav-link')) {
+                    closeAllMenus();
+                }
+            });
+        });
+    </script>
+    
+
+
+
+
+
+        
+                                            
+
+
+     </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+                                <div class="mainbloc popoverWrap" id="mainbloc">
+                                   
+
+                                    <style>
+                                        .btn-primary {
+                                          background-color: #4d6886; /* Couleur bleu foncé pour le fond des boutons sélectionnés */
+                                          color: #ffffff; /* Couleur blanche pour le texte des boutons sélectionnés */
+                                        }
+                                        .btn-primary:hover {
+                                          background-color: #ffffff; /* Couleur bleu foncé pour le fond des boutons sélectionnés */
+                                          color: #4d6886; /* Couleur blanche pour le texte des boutons sélectionnés */
+                                        }
+                                      </style>
+
+
+
+
+                                    
+<div class="row">
+                                        <div class="col-md-4" style="margin-top:5px;"> <!-- 5/12 corresponds approximately to 40% -->
+                                            
+                                            <div class="container mt-3">
+                                                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                                                    <div class="carousel-inner" style="background-color: white;border-radius:15px;margin-bottom:20px;">
+                                                        <div  class="carousel-item active">
+                                                          <img style="width: 100%;border-top-left-radius: 15px;border-top-right-radius: 15px;" src="../images/imag_college.jpg"  alt="First slide">
+                                                          <p style="margin-top: 10px;margin-left: 20px;font-size: smaller;"> <strong> Ecole primaire autonome <br>مدرسة ابتدائية مستقلة</strong> </p>
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                          <img style="width: 100%;border-top-left-radius: 15px;border-top-right-radius: 15px;" src="../images/imag_preprim.jpg" alt="Second slide">
+                                                          <p style="margin-top: 10px;margin-left: 20px;font-size: smaller;"><strong>Délégation Provinciale  du MEN <br> النيابة الإقليمية لوزارة التربية الوطنية</strong>   </p>
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                          <img style="width: 100%;border-top-left-radius: 15px;border-top-right-radius: 15px;" src="../images/imag_secqualif.jpg" alt="Third slide">
+                                                          <p style="margin-top: 10px;margin-left: 20px;font-size: smaller;"> <strong>Lycée collègial enseignement général <br> الثانوية الإعدادية للتعليم العام</strong>  </p>
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                          <img style="width: 100%;border-top-left-radius: 15px;border-top-right-radius: 15px;" src="../images/imag_secqualif.jpg" alt="fourth slide">
+                                                          <p style="margin-top: 10px;margin-left: 20px;font-size: smaller;"><strong>Lycée qualifiant enseignement général <br> الثانوية الثأهيلية للتعليم العام</strong>  </p>
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                          <img style="width: 100%;border-top-left-radius: 15px;border-top-right-radius: 15px;" src="../images/imag_secqualif.jpg" alt="fifth slide">
+                                                          <p style="margin-top: 10px;margin-left: 20px;font-size: smaller;"> <strong>Académie Régionale de l'Education <br> الأكاديمية الجهوية للتربية والتكوين</strong>  </p>
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                          <img style="width: 100%;border-top-left-radius: 15px;border-top-right-radius: 15px;" src="../images/imag_secqualif.jpg" alt="sixth slide">
+                                                          <p style="margin-top: 10px;margin-left: 20px;font-size: smaller;"> <strong>Lycée qualifiant de référence <br> الثانوية الثأهيلية المرجعية</strong>  </p>
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                          <img style="width: 100%;border-top-left-radius: 15px;border-top-right-radius: 15px;" src="../images/imag_secqualif.jpg" alt="seventh slide">
+                                                          <p style="margin-top: 10px;margin-left: 20px; font-size: smaller;"><strong>Centre Régional des Métiers <br>المركز الجهوي لمهن التربية والتكوين</strong>   </p>
+                                                        </div>
+                                                      </div>
+                                                     <div class="card text-center mb-3" style="border-radius: 15px;">
+                                                                <div class="card-body">
+                                                                  <h5 class="card-title" style="font-size: medium;"><strong>الموقع</strong> </h5><hr>
+                                                                  <a target="_blank" href="https://www.google.com/maps/place/D%C3%A9l%C3%A9gation+du+Minist%C3%A8re+de+L'%C3%A9ducation+Nationale/@23.6996508,-15.9307916,17z/data=!4m6!3m5!1s0xc224831d96aaaab:0xe57fc6f0394ca6ab!8m2!3d23.6996508!4d-15.9307916!16s%2Fg%2F11kj8_zs5c?entry=ttu" class="card-text"><img src="../images/icone-geolocal.png"  alt="" style="width: 50px;"></a>
+                                                                                                     </div><hr style="height:2px;">
+                                                                <div class="card-body">
+                                                                  <h5 class="card-title" style="font-size: medium;"><strong>مؤسسات</strong></h5><hr>
+                                                                  <a href="../academies.html" class="card-text"><img src="../images/edifice-icone.gif"  alt="" style="width: 50px;"></a>
+                                                                                                  </div>
+                                                            </div>
+                                                  </div>
+                                                  <!-- Script pour activer le carrousel -->
+                                                  <script>
+                                                    $(document).ready(function(){
+                                                      $('.carousel').carousel({
+                                                        interval: 3000 // Change l'intervalle de défilement à 3 secondes (3000 ms)
+                                                      });
+                                                    });
+                                                  </script>
+                                                
+                                                
+                                            </div>
+                            
+                                        </div>
+
+
+                            
+                            
+
+                                        <div class="col-md-7" style="border-radius: 20px;background-color: white;margin-top:20px;"> <!-- 7/12 corresponds approximately to 60% -->
+                                            
+                                        <div style=" margin-top: 10px;">
+                                                    <div style="flex-grow: 1; margin-left: -10px;" id="paper">
+                                                        <p style="color: #f46e27;direction:rtl;text-align:right"><strong>الأكاديمية الجهوية للتربية والتكوين:</strong></p><hr>
+                                                        <!-- Main content here -->
+                                                    </div>
+                                                        <ul style="list-style: none; padding: 0;direction: rtl; text-align: right; list-style-position: inside;">
+                                                            
+                                                            <li style="margin-bottom: 10px;" id="R06">
+                                                                <a style="font-size: 16px; color: #6387B1; text-decoration: none;" id="R06_1" target="_blank" href="ecoleprimaire.html">
+                                                                    <span style="color: #ff6215;">»</span> AREF EDDAKHLA  OUED EDDAHAB
+                                                                </a>
+                                                            </li><br>
+                                                            
+                                                        </ul>
+                                                    
+                                                </div></div>
+                                        </div>
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                                    
+                            
+                            
+                            
+                                    
+                                    </div>
+                             </div>
+
+
+
+
+                             
+
+
+                             <div style="background:#f6a228;color:#fff;text-align:center;line-height:30px;font-size:13px;margin-top:8px">
+    <table style="background-color: orange; margin: auto;">
+        <tr>
+            <td colspan="3">
+                <strong>ⴰⵎⵔⵏⵓ ⵏ ⵜⵎⴰⵡⴰⵙⵜ - ⵉⵎⵉⵏⵔⵡⴰⵃ - ⵔⴱⴰⴹ ⵜⴱⴰⴹ ⵜⵉⵍⵉⴼⵓⵏ</strong> 0537687219 - المقر المركزي - باب الرواح - الهاتف : 0537687219 - الفاكس : 0537771874
+            </td>
+        </tr>
+    </table>
+</div>
+<div style="clear:both"></div>
+<div  style="text-align: center;">
+    <div class="content" style="display: inline-block; text-align: right;firection:rtl;background-color: white;margin-top:30px;margin-bottom:20px;padding-top:30px;padding-bottom:20px;border-radius:5px;">
+    <table >
+    <tr>
+        <td style="padding-right: 30px;padding-left:20px; vertical-align: top;">
+            <h4 style="color: #f46e27;">فضاءات</h4><hr>
+            <a style="color:#4d6886;" href="#">فضاء الآباء و الأمهات</a><hr style="border: 0; height: 1px; background: #333; background-image: linear-gradient(to right, #ccc, #333, #ccc);">
+            <a style="color:#4d6886;" href="#">فضاء  التلميذات والتلاميذ</a><hr style="border: 0; height: 1px; background: #333; background-image: linear-gradient(to right, #ccc, #333, #ccc);">
+            <a style="color:#4d6886;" href="#">فضاء الموارد البشرية</a><hr style="border: 0; height: 1px; background: #333; background-image: linear-gradient(to right, #ccc, #333, #ccc);">
+        </td>
+        <td style="padding-right: 30px; vertical-align: top;">
+            <h4 style="color: #f46e27;">تقاسم</h4><hr>
+            <a style="color:#4d6886;" href="#">كل المستجدات</a><hr style="border: 0; height: 1px; background: #333; background-image: linear-gradient(to right, #ccc, #333, #ccc);">
+            <a style="color:#4d6886;" href="#">إعلانات ومذكرات</a><hr style="border: 0; height: 1px; background: #333; background-image: linear-gradient(to right, #ccc, #333, #ccc);">
+            <a style="color:#4d6886;" href="#">إحصائيات</a><hr style="border: 0; height: 1px; background: #333; background-image: linear-gradient(to right, #ccc, #333, #ccc);">
+            
+        </td>
+        <td style="padding-right: 30px; vertical-align: top;">
+            <h4 style="color: #f46e27;">خدمات</h4><hr>
+            <a style="color:#4d6886;" href="#">طلبات العروض</a><hr style="border: 0; height: 1px; background: #333; background-image: linear-gradient(to right, #ccc, #333, #ccc);">
+            <a style="color:#4d6886;" href="#">صندوق الاقتراحات</a><hr style="border: 0; height: 1px; background: #333; background-image: linear-gradient(to right, #ccc, #333, #ccc);">
+            <a style="color:#4d6886;" href="#">دليل الإدارة المركزية</a><hr style="border: 0; height: 1px; background: #333; background-image: linear-gradient(to right, #ccc, #333, #ccc);">
+            
+        </td>
+        <td style="padding-right: 30px; vertical-align: top;">
+            <h4 style="color: #f46e27;">روابط مفيدة​</h4><hr>
+            <a style="color:#4d6886;" href="#" target="_blank">بوابة الصحراء المغربية</a><hr style="border: 0; height: 1px; background: #333; background-image: linear-gradient(to right, #ccc, #333, #ccc);">
+            <a style="color:#4d6886;" href="#" target="_blank">رئيس الحكومة</a><hr style="border: 0; height: 1px; background: #333; background-image: linear-gradient(to right, #ccc, #333, #ccc);">
+            <a style="color:#4d6886;" href="#" target="_blank">الوظيفة العمومية</a><hr style="border: 0; height: 1px; background: #333; background-image: linear-gradient(to right, #ccc, #333, #ccc);">
+            
+        </td>
+        <td style="padding-right: 20px; vertical-align: top;">
+            <h4 style="color: #f46e27;">اتصال و بحث</h4><hr>
+            <a style="color:#4d6886;" href="#">اتصال</a><hr style="border: 0; height: 1px; background: #333; background-image: linear-gradient(to right, #ccc, #333, #ccc);">
+            <a style="color:#4d6886;" href="#">علبة الأفكار</a><hr style="border: 0; height: 1px; background: #333; background-image: linear-gradient(to right, #ccc, #333, #ccc);">
+            <a style="color:#4d6886;" href="#">محرك البحث</a><hr style="border: 0; height: 1px; background: #333; background-image: linear-gradient(to right, #ccc, #333, #ccc);">
+        </td>
+    </tr>
+</table>
+
+                    
+                    </div>
+                    <div class="copyright">
+                    ⵜⴰⴳⵍⴷⵉⵜ ⵏ ⵍⵎⵖⵔⵉⴱ - ⵜⴰⵎⴰⵡⴰⵙⵜ ⵏ ⵓⵙⴳⵎⵉ ⴰⵏⴰⵎⵓⵔ ⴷ ⵓⵙⵙⵍⵎⴷ ⴰⵎⵣⵡⴰⵔⵓ ⴷ ⵜⵓⵏⵏⵓⵏⵜ © المملكة المغربية - وزارة التربية الوطنية و التعليم الأولي و الرياضة 2024
+                    </div>
+
+</div>
+
+
+
+
+
+
+
+
+    <!-- content -->
+</div>
+<!-- footer -->
+
+                            </div>
+                            
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+    </body>
+</html>
