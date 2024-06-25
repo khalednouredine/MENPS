@@ -64,16 +64,16 @@
 }
 
 .navbar-nav .nav-item .dropdown-menu {
-    background-color: #343a40; /* Couleur de fond des menus déroulants */
+    background-color: white; /* Couleur de fond des menus déroulants */
     border: none; /* Pas de bordure autour des menus déroulants */
 }
 
 .navbar-nav .nav-item .dropdown-menu a {
-    color: #ffffff; /* Couleur du texte des liens dans les menus déroulants */
+    color: black; /* Couleur du texte des liens dans les menus déroulants */
 }
 
 .navbar-nav .nav-item .dropdown-menu a:hover {
-    background-color: #292b2c; /* Couleur de fond au survol des liens dans les menus déroulants */
+    background-color: rgb(235, 235, 235); /* Couleur de fond au survol des liens dans les menus déroulants */
 }
 
 
@@ -101,7 +101,7 @@
                                         aria-haspopup="true" aria-expanded="false">
                                         Ministère
                                     </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown1" style="text-align: center;">
                                         <a class="dropdown-item" href="#">Structure du secteur</a>
                                         <a class="dropdown-item" href="BG-ChakibBenmoussa.html">Le Ministre</a>
                                         <a class="dropdown-item" href="organiramme.html">Structure de l'administration centrale</a>
@@ -112,7 +112,7 @@
                                         aria-haspopup="true" aria-expanded="false">
                                         Grandes orientations stratégiques
                                     </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown2" style="text-align: center;">
                                         <a class="dropdown-item" href="orientations.html">Orientations</a>
                                         <a class="dropdown-item" href="orientationsroyales.html">Discours royaux</a>
                                         <a class="dropdown-item" href="charteEF.html">Charte nationale de l'éducation et de la formation</a>
@@ -123,7 +123,7 @@
                                         aria-haspopup="true" aria-expanded="false">
                                         Éducation nationale
                                     </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown3" style="text-align: center;">
                                         <a class="dropdown-item" href="EnsPresco.aspx">Éducation préscolaire</a>
                                         <a class="dropdown-item" href="ens-preprim.html">Éducation primaire</a>
                                         <a class="dropdown-item" href="Projet-Curriculum-LagueAmazighe2021.html">Projet de nouveau curriculum de langue amazighe - 2021</a>
@@ -134,7 +134,7 @@
                                         aria-haspopup="true" aria-expanded="false">
                                         Sport
                                     </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown4">
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown4" style="text-align: center;">
                                         <a class="dropdown-item" href="#/Fr/Pages/sportsco.aspx" target="_blank">Sport scolaire</a>
                                         <a class="dropdown-item" href="https://www.frmss-dpss.com/الاستقبال/">Fédération royale marocaine du sport scolaire</a>
                                         <a class="dropdown-item" href="Prog-gouv-sport2126.html">Sport dans le programme gouvernemental 2021-2026</a>
@@ -468,15 +468,20 @@
                                                         <img src="images/logoaccueil.jpg" class="card-img-top" alt="..." style="width: 100%;;border-radius: 20px 20px 0 0;">
 
                                                     <div class="card text-center mb-3" style="width: 100%; border-radius: 20px;">
-                                                    <div class="card-body">
+                                                        <a href="publication.html"><div class="publication">
                                                         <div class="overflow-scroll">
+                                                            <style>.publication:hover {
+                                                                border-radius: 5px;
+                                                                
+                                                            };
+                                                            </style>
                                                             <div>
-                                                                <a href="publication.html">
-                                                                    <p style="color: #f46e27;direction: rtl; font-size: 15px;">Les Nouvelles mises à jours au seins de la Direction provinciale MENPS de Oued Ed-Dahab</p>
-                                                                </a>
+                                                                
+                                                                    <p style="padding-top: 10px;color: #f46e27;direction: rtl;">Les Nouvelles mises à jours au seins de la Direction provinciale MENPS de Oued Ed-Dahab</p>
+                                                                
                                                             </div>
                                                         </div>
-                                                    </div>
+                                                    </div></a>
                                                     </div>
                                                     </a>
                                                 </div>
@@ -660,35 +665,46 @@
         <div class="content" style="display: inline-block; background-color: white; margin-top:30px; margin-bottom:20px; padding-top:30px; padding-bottom:20px; border-radius:5px;font-size:small;">
             <table>
                 <tr>
-                    <td style="padding-right: 30px; padding-left:20px; vertical-align: top;">
+                    <style>
+                        .footer {
+    color: #4d6886;
+    text-decoration: none;
+}
+
+.footer:hover {
+    color: #f46e27;
+    text-decoration: none;
+}
+                    </style>
+                    <td  style="padding-right: 30px; padding-left:20px; vertical-align: top;">
                         <h4 style="color: #f46e27;">Espaces</h4><hr>
-                        <a style="color:#4d6886;" href="https://example.com/parents">Espace Parents</a><hr style="border: 0; height: 1px; background: #333; background-image: linear-gradient(to right, #ccc, #333, #ccc);">
-                        <a style="color:#4d6886;" href="https://example.com/students">Espace Élèves</a><hr style="border: 0; height: 1px; background: #333; background-image: linear-gradient(to right, #ccc, #333, #ccc);">
-                        <a style="color:#4d6886;" href="https://example.com/hr">Espace Ressources Humaines</a><hr style="border: 0; height: 1px; background: #333; background-image: linear-gradient(to right, #ccc, #333, #ccc);">
+                        <a class="footer"  href="https://example.com/parents">Espace Parents</a><hr style="border: 0; height: 1px; background: #333; background-image: linear-gradient(to right, #ccc, #333, #ccc);">
+                        <a class="footer"  href="https://example.com/students">Espace Élèves</a><hr style="border: 0; height: 1px; background: #333; background-image: linear-gradient(to right, #ccc, #333, #ccc);">
+                        <a class="footer"  href="https://example.com/hr">Espace Ressources Humaines</a><hr style="border: 0; height: 1px; background: #333; background-image: linear-gradient(to right, #ccc, #333, #ccc);">
                     </td>
                     <td style="padding-right: 30px; vertical-align: top;">
                         <h4 style="color: #f46e27;">Partage</h4><hr>
-                        <a style="color:#4d6886;" href="https://example.com/news">Toutes les Actualités</a><hr style="border: 0; height: 1px; background: #333; background-image: linear-gradient(to right, #ccc, #333, #ccc);">
-                        <a style="color:#4d6886;" href="https://example.com/publications">Annonces et Mémorandums</a><hr style="border: 0; height: 1px; background: #333; background-image: linear-gradient(to right, #ccc, #333, #ccc);">
-                        <a style="color:#4d6886;" href="https://example.com/statistics">Statistiques</a><hr style="border: 0; height: 1px; background: #333; background-image: linear-gradient(to right, #ccc, #333, #ccc);">
+                        <a class="footer"  href="https://example.com/news">Toutes les Actualités</a><hr style="border: 0; height: 1px; background: #333; background-image: linear-gradient(to right, #ccc, #333, #ccc);">
+                        <a class="footer"  href="https://example.com/publications">Annonces et Mémorandums</a><hr style="border: 0; height: 1px; background: #333; background-image: linear-gradient(to right, #ccc, #333, #ccc);">
+                        <a class="footer"  href="https://example.com/statistics">Statistiques</a><hr style="border: 0; height: 1px; background: #333; background-image: linear-gradient(to right, #ccc, #333, #ccc);">
                     </td>
                     <td style="padding-right: 30px; vertical-align: top;">
                         <h4 style="color: #f46e27;">Services</h4><hr>
-                        <a style="color:#4d6886;" href="https://example.com/tenders">Appels d'Offres</a><hr style="border: 0; height: 1px; background: #333; background-image: linear-gradient(to right, #ccc, #333, #ccc);">
-                        <a style="color:#4d6886;" href="https://example.com/suggestions">Boîte à Suggestions</a><hr style="border: 0; height: 1px; background: #333; background-image: linear-gradient(to right, #ccc, #333, #ccc);">
-                        <a style="color:#4d6886;" href="https://example.com/directory">Annuaire de l'Administration Centrale</a><hr style="border: 0; height: 1px; background: #333; background-image: linear-gradient(to right, #ccc, #333, #ccc);">
+                        <a class="footer"  href="https://example.com/tenders">Appels d'Offres</a><hr style="border: 0; height: 1px; background: #333; background-image: linear-gradient(to right, #ccc, #333, #ccc);">
+                        <a class="footer"  href="https://example.com/suggestions">Boîte à Suggestions</a><hr style="border: 0; height: 1px; background: #333; background-image: linear-gradient(to right, #ccc, #333, #ccc);">
+                        <a class="footer"  href="https://example.com/directory">Annuaire de l'Administration Centrale</a><hr style="border: 0; height: 1px; background: #333; background-image: linear-gradient(to right, #ccc, #333, #ccc);">
                     </td>
                     <td style="padding-right: 30px; vertical-align: top;">
                         <h4 style="color: #f46e27;">Liens Utiles</h4><hr>
-                        <a style="color:#4d6886;" href="https://www.sahara.ma/ar/" target="_blank">Portail du Sahara Marocain</a><hr style="border: 0; height: 1px; background: #333; background-image: linear-gradient(to right, #ccc, #333, #ccc);">
-                        <a style="color:#4d6886;" href="http://www.cg.gov.ma/" target="_blank">Chef du Gouvernement</a><hr style="border: 0; height: 1px; background: #333; background-image: linear-gradient(to right, #ccc, #333, #ccc);">
-                        <a style="color:#4d6886;" href="http://www.mmsp.gov.ma/" target="_blank">Fonction Publique</a><hr style="border: 0; height: 1px; background: #333; background-image: linear-gradient(to right, #ccc, #333, #ccc);">
+                        <a class="footer"  href="https://www.sahara.ma/ar/" target="_blank">Portail du Sahara Marocain</a><hr style="border: 0; height: 1px; background: #333; background-image: linear-gradient(to right, #ccc, #333, #ccc);">
+                        <a class="footer"  href="http://www.cg.gov.ma/" target="_blank">Chef du Gouvernement</a><hr style="border: 0; height: 1px; background: #333; background-image: linear-gradient(to right, #ccc, #333, #ccc);">
+                        <a class="footer"  href="http://www.mmsp.gov.ma/" target="_blank">Fonction Publique</a><hr style="border: 0; height: 1px; background: #333; background-image: linear-gradient(to right, #ccc, #333, #ccc);">
                     </td>
                     <td style="padding-right: 20px; vertical-align: top;">
                         <h4 style="color: #f46e27;">Contact et Recherche</h4><hr>
-                        <a style="color:#4d6886;" href="https://example.com/contact">Contact</a><hr style="border: 0; height: 1px; background: #333; background-image: linear-gradient(to right, #ccc, #333, #ccc);">
-                        <a style="color:#4d6886;" href="https://example.com/ideas">Boîte à Idées</a><hr style="border: 0; height: 1px; background: #333; background-image: linear-gradient(to right, #ccc, #333, #ccc);">
-                        <a style="color:#4d6886;" href="https://example.com/search">Moteur de Recherche</a><hr style="border: 0; height: 1px; background: #333; background-image: linear-gradient(to right, #ccc, #333, #ccc);">
+                        <a class="footer"  href="https://example.com/contact">Contact</a><hr style="border: 0; height: 1px; background: #333; background-image: linear-gradient(to right, #ccc, #333, #ccc);">
+                        <a class="footer"  href="https://example.com/ideas">Boîte à Idées</a><hr style="border: 0; height: 1px; background: #333; background-image: linear-gradient(to right, #ccc, #333, #ccc);">
+                        <a class="footer"  href="https://example.com/search">Moteur de Recherche</a><hr style="border: 0; height: 1px; background: #333; background-image: linear-gradient(to right, #ccc, #333, #ccc);">
                     </td>
                 </tr>
             </table>
