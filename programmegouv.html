@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        #header {
+            background-color: #343a40;
+            padding: 10px;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block;
+        }
+        .dropdown-content a {
+            color: white !important;
+        }
+
+        #DeltaSiteLogo img {
+            border-radius: 20px;
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+        }
+        /* Styles pour la barre de navigation centrée */
+
+.navbar {
+    background-color: #343a40; /* Couleur de fond de la barre de navigation */
+    padding: 10px; /* Espacement intérieur */
+}
+
+.navbar-toggler {
+    border: none; /* Retirer la bordure du bouton de basculement */
+}
+
+.navbar-toggler-icon {
+     /* Couleur de l'icône du bouton de basculement */
+}
+
+.navbar-nav {
+    width: 100%;
+    justify-content: center; /* Centrer les éléments de la barre de navigation */
+}
+
+.navbar-nav .nav-item {
+    text-align: center; /* Centrer le texte à l'intérieur des éléments de navigation */
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #ffffff; /* Couleur du texte des liens principaux */
+    padding: 10px 15px; /* Espacement intérieur des liens principaux */
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    background-color: #292b2c; /* Couleur de fond au survol des liens principaux */
+}
+
+.navbar-nav .nav-item .dropdown-menu {
+    background-color: white; /* Couleur de fond des menus déroulants */
+    border: none; /* Pas de bordure autour des menus déroulants */
+}
+
+.navbar-nav .nav-item .dropdown-menu a {
+    color: black; /* Couleur du texte des liens dans les menus déroulants */
+}
+
+.navbar-nav .nav-item .dropdown-menu a:hover {
+    background-color: rgb(235, 235, 235); /* Couleur de fond au survol des liens dans les menus déroulants */
+}
+
+
+    </style>
+</head>
+<body style="background-image: url('images/fond.gif');margin-left:15px;">
+    <div id="container">
+        <div id="header">
+            <div class="content">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <div class="container justify-content-center">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-justify" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5.5 0 0 1 0 1h-11a.5.5.5 0 0 1-.5-.5m0-3a.5.5.5 0 0 1 .5-.5h11a.5.5.5 0 0 1 0 1h-11a.5.5.5 0 0 1-.5-.5"/>
+                            </svg>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html">Accueil</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false">
+                                        Ministère
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown1" style="text-align: center;">
+                                        <a class="dropdown-item" href="#">Structure du secteur</a>
+                                        <a class="dropdown-item" href="BG-ChakibBenmoussa.html">Le Ministre</a>
+                                        <a class="dropdown-item" href="organiramme.html">Structure de l'administration centrale</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false">
+                                        Grandes orientations stratégiques
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown2" style="text-align: center;">
+                                        <a class="dropdown-item" href="orientations.html">Orientations</a>
+                                        <a class="dropdown-item" href="orientationsroyales.html">Discours royaux</a>
+                                        <a class="dropdown-item" href="charteEF.html">Charte nationale de l'éducation et de la formation</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false">
+                                        Éducation nationale
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown3" style="text-align: center;">
+                                        <a class="dropdown-item" href="EnsPresco.aspx">Éducation préscolaire</a>
+                                        <a class="dropdown-item" href="ens-preprim.html">Éducation primaire</a>
+                                        <a class="dropdown-item" href="Projet-Curriculum-LagueAmazighe2021.html">Projet de nouveau curriculum de langue amazighe - 2021</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false">
+                                        Sport
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown4" style="text-align: center;">
+                                        <a class="dropdown-item" href="#/Fr/Pages/sportsco.aspx" target="_blank">Sport scolaire</a>
+                                        <a class="dropdown-item" href="https://www.frmss-dpss.com/الاستقبال/">Fédération royale marocaine du sport scolaire</a>
+                                        <a class="dropdown-item" href="Prog-gouv-sport2126.html">Sport dans le programme gouvernemental 2021-2026</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                
+                
+            
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+
+
+        
+                                            
+
+
+     </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+                                <div class="mainbloc popoverWrap" id="mainbloc">
+                                   
+
+                                    <style>
+                                        .btn-primary {
+                                          background-color: #4d6886; /* Couleur bleu foncé pour le fond des boutons sélectionnés */
+                                          color: #ffffff; /* Couleur blanche pour le texte des boutons sélectionnés */
+                                        }
+                                        .btn-primary:hover {
+                                          background-color: #ffffff; /* Couleur bleu foncé pour le fond des boutons sélectionnés */
+                                          color: #4d6886; /* Couleur blanche pour le texte des boutons sélectionnés */
+                                        }
+                                        /* Styles pour améliorer le carrousel et les cartes */
+
+.carousel-inner {
+    margin-bottom: 20px;
+}
+
+.carousel-item .card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-item .card-img-top {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.carousel-item .card-body {
+    background-color: #f8f9fa;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 20px;
+    text-align: center;
+}
+
+.carousel-item .card-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.carousel-item .card-text {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+.card {
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.card .card-title {
+    font-size: medium;
+}
+
+.card-body img {
+    width: 50px;
+    margin: 10px 0;
+}
+
+.card-body hr {
+    margin: 10px 0;
+    border-top: 2px solid #eee;
+}
+
+                                      </style>
+
+
+
+
+                                    
+                                    <div class="row">
+                                        <div class="col-md-4" style="margin-top:5px;"> <!-- 5/12 corresponds approximately to 40% -->
+                                            
+                                            <div class="container mt-3">
+                                                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                                                    <div class="carousel-inner" style="margin-bottom: 20px;">
+                                                        <div class="carousel-item active">
+                                                            <div class="card">
+                                                                <img class="card-img-top" src="images/imag_college.jpg" alt="First slide">
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">Ecole primaire autonome</h5>
+                                                                    <p class="card-text">مدرسة ابتدائية مستقلة</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <div class="card">
+                                                                <img class="card-img-top" src="images/imag_preprim.jpg" alt="Second slide">
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">Délégation Provinciale du MEN</h5>
+                                                                    <p class="card-text">النيابة الإقليمية لوزارة التربية الوطنية</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <div class="card">
+                                                                <img class="card-img-top" src="images/imag_secqualif.jpg" alt="Third slide">
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">Lycée collègial enseignement général</h5>
+                                                                    <p class="card-text">الثانوية الإعدادية للتعليم العام</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <div class="card">
+                                                                <img class="card-img-top" src="images/imag_secqualif.jpg" alt="Fourth slide">
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">Lycée qualifiant enseignement général</h5>
+                                                                    <p class="card-text">الثانوية الثأهيلية للتعليم العام</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <div class="card">
+                                                                <img class="card-img-top" src="images/imag_secqualif.jpg" alt="Fifth slide">
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">Académie Régionale de l'Education</h5>
+                                                                    <p class="card-text">الأكاديمية الجهوية للتربية والتكوين</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <div class="card">
+                                                                <img class="card-img-top" src="images/imag_secqualif.jpg" alt="Sixth slide">
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">Lycée qualifiant de référence</h5>
+                                                                    <p class="card-text">الثانوية الثأهيلية المرجعية</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <div class="card">
+                                                                <img class="card-img-top" src="images/imag_secqualif.jpg" alt="Seventh slide">
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">Centre Régional des Métiers de l'Education</h5>
+                                                                    <p class="card-text">المركز الجهوي لمهن التربية والتكوين</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <!-- Script pour activer le carrousel -->
+                                                <script>
+                                                    $(document).ready(function () {
+                                                        $('.carousel').carousel({
+                                                            interval: 3000 // Change l'intervalle de défilement à 3 secondes (3000 ms)
+                                                        });
+                                                    });
+                                                </script>
+
+<div class="card text-center mb-3" style="width: 100%;border-radius: 20px;">
+    <div class="card-body">
+        <a href="presentation.html" target="_blank">
+            <h5 class="card-title"><strong>الموقع</strong></h5>
+        <div class="card text-center mb-3" style="width: 100%; border-radius: 20px;">
+        <div class="card-body">
+            <a target="_blank" href="https://www.google.com/maps/place/D%C3%A9l%C3%A9gation+du+Minist%C3%A8re+de+L'%C3%A9ducation+Nationale/@23.6996508,-15.9307916,17z/data=!4m6!3m5!1s0xc224831d96aaaab:0xe57fc6f0394ca6ab!8m2!3d23.6996508!4d-15.9307916!16s%2Fg%2F11kj8_zs5c?entry=ttu" class="card-text">
+                <img src="images/icone-geolocal.png" alt="Geolocation Icon" style="width: 50px;">
+            </a>
+            
+        </div>
+        </div>
+        </a>
+    </div>
+          
+</div>
+                                                
+                                                
+                                                <div class="card text-center mb-3" style="width: 100%;border-radius: 20px;">
+                                                    <div class="card-body">
+                                                        <a href="presentation.html" target="_blank">
+                                                        <h2 style="color:#f46e27;">منشورات</h2>
+                                                        <div class="card text-center mb-3" style="width: 100%; border-radius: 20px;">
+                                                        <div class="card-body">
+                                                            <a href="publication" class="card-title" style="color:#4d6886; direction: rtl; list-style-position: inside; display: block; text-align: center;">الأخبار</a>
+                                                            <hr>
+                                                            <div class="overflow-scroll">
+                                                                <div>
+                                                                    
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        </div>
+                                                        </a>
+                                                    </div>
+                                                </div>  
+                                                
+
+                                            </div>
+                            
+                                     </div>
+
+
+
+                                     <style>
+                                        /* Custom styles for the redesigned section */
+
+.card {
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-body a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-pills .nav-link {
+    color: #4d6886;
+    font-size: smaller;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-pills .nav-link.active {
+    background-color: #4d6886;
+    color: #ffffff;
+}
+
+.nav-pills .nav-link:hover:not(.active) {
+    background-color: #4d6886;
+    color: #ffffff;
+}
+
+.tab-content {
+    padding-bottom: 20px;
+}
+
+.service-title {
+    color: #f46e27;
+    direction: rtl;
+    text-align: right;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.service-list {
+    font-size: medium;
+    font-weight: bold;
+    list-style: none;
+    padding-left: 0;
+}
+
+.service-list li {
+    padding-top: 10px;
+    direction: ltr;
+    text-align: right;
+}
+
+.service-list a {
+    color: #4d6886;
+    text-decoration: none;
+}
+
+.service-list a:hover {
+    color: #f46e27;
+}
+
+                                     </style>
+                            
+                            
+
+                                        <div class="col-md-8" style="margin-top:20px;border-radius: 20px;">
+                                            
+                                            <div class="card text-center mb-3" style="width: 100%;border-radius: 20px;">
+                                                <div class="card-body">
+                                                    <a href="presentation.html" target="_blank">
+                                                        <img src="images/logoaccueil.jpg" class="card-img-top" alt="..." style="width: 100%;;border-radius: 20px 20px 0 0;">
+
+                                                    <div class="card text-center mb-3" style="width: 100%; border-radius: 20px;">
+                                                        <a href="presentation.html" target="_blank"><div class="publication">
+                                                        <div class="overflow-scroll">
+                                                            <style>.publication:hover {
+                                                                border-radius: 5px;
+                                                                
+                                                            };
+                                                            </style>
+                                                            <div>
+                                                                
+                                                                    <p style="padding-top: 10px;color: #f46e27;direction: rtl;">Les Nouvelles mises à jours au seins de la Direction provinciale MENPS de Oued Ed-Dahab</p>
+                                                                
+                                                            </div>
+                                                        </div>
+                                                    </div></a>
+                                                    </div>
+                                                    </a>
+                                                </div>
+                                            </div>  
+                                        
+                                            
+                                            <div class="card text-center mb-3" style="width: 100%;border-radius: 20px;">
+                                                <div class="card-body">
+                                                    <div class="ms-webpart-zone ms-fullWidth">
+                                                        <div id="MSOZoneCell_WebPartWPQ2" class="s4-wpcell-plain ms-webpartzone-cell ms-webpart-cell-vertical ms-fullWidth ">
+                                                            <div class="ms-webpart-chrome ms-webpart-chrome-vertical ms-webpart-chrome-fullWidth ">
+                                                                <div webpartid="02e7ab5e-5fc2-496b-8c83-0472a20b7178" haspers="false" id="WebPartWPQ2" width="100%" class="ms-WPBody " allowdelete="false" style=""><div class="ms-rtestate-field">​<p><span class="ms-rteFontFace-1 ms-rteThemeForeColor-5-4" style="text-decoration: #005594;"><img src="img-RGouv2126.jpg" alt="الصورة الرسمية للحكومة " class="ms-rteImage-4" style="margin: 5px; width: 580px; height: 142px;"> <br></span></p><p><span class="ms-rteFontFace-1 ms-rteThemeForeColor-5-4" style="text-decoration: #005594;">الرياضة في البرنامج الحكومي</span><br class="ms-rteFontFace-1"><span class="ms-rteFontFace-1"><br></span></p><p style="text-align: justify;"><span class="ms-rteFontFace-1 ms-rteForeColor-3" style="text-decoration: #ffa500;"><span style="text-decoration: #ffa500;">الاهتمام بالثقافة والرياضة</span> </span></p><p style="text-align: justify;"><span class="ms-rteFontFace-1">في
+                                                     المجال الرياضي، تؤكد الحكومة على سعيها الحثيث نحو ترصيد الاستراتيجيات 
+                                                    الخاصة بالرياضة، و أيضا بلورتها لسياسة عمومية رياضية تستجيب للحاجيات 
+                                                    والقدرات، مع وضع آليات لتنزيلها بشكل أفضل باعتبارها رافعة أساسية لتحقيق 
+                                                    التنمية.</span></p><p style="text-align: justify;"><span class="ms-rteFontFace-1 ms-rteForeColor-3" style="text-decoration: #ffa500;">الاهتمام بالرياضة باعتبارها رافعة أساسية لتحقيق التنمية</span></p><p style="text-align: justify;"><span class="ms-rteFontFace-1">تعتزم
+                                                     الحكومة تبني مقاربة متكاملة وشمولية مندمجة، بخلق شراكة حقيقية مع 
+                                                    الجماعات الترابية، وتشجيع انخراط مؤسسات المجتمع المدني في المجال 
+                                                    الرياضي، بغية تطوير الرياضة محليا، وإحداث الوحدات الرياضية التربوية 
+                                                    الجماعية، وتوفير الفضاءات الضرورية على الصعيد الترابي.</span></p><p style="text-align: justify;"><span class="ms-rteFontFace-1">كما
+                                                     سيتم العمل على تقوية حضور المغرب على الساحة الرياضية الدولية، و الحث 
+                                                    على تنسيق وتكاثف الجهود من أجل تحسين إنجازات رياضيينا على الصعيد الجهوي 
+                                                    والدولي في مختلف التظاهرات الرياضية الفردية والجماعية.</span></p><p style="text-align: justify;"><span class="ms-rteFontFace-1">و اعتبارا للأدوار المتنامية للرياضة، فإن الحكومة عازمة على:</span></p><ul dir="rtl" style="text-align: justify;"><li><span class="ms-rteFontFace-1">إعطاء الأولوية للنهوض بالرياضة المدرسية و الجماعية على المستوى الترابي؛</span></li><li><span class="ms-rteFontFace-1">توضيح
+                                                     دور الجماعات الترابية في النهوض بقطاع الرياضة وتعزيز إرساء الالتقائية 
+                                                    بين قطاعات الشباب و الرياضة والتربية الوطنية ومضافرة جهودها؛</span></li><li><span class="ms-rteFontFace-1">منح التربية البدينة و الرياضية مكانة بارزة في البرامج الدراسية، والرفع من ساعاتها ومن المعامل الممنوح لهذه المادة؛</span></li><li><span class="ms-rteFontFace-1">بث
+                                                     دينامية حقيقية في الرياضة المدرسية المهيكلة على الصعيد الترابي، من خلال
+                                                     تحفيز الجمعيات الرياضية، وتشجيعها على ممارسة أنشطتها داخل مؤسسات 
+                                                    التربية والتعليم و التكوين المهني؛</span></li><li><span class="ms-rteFontFace-1">تزويد
+                                                     مؤسسات التربية والتعليم المدرسي العمومي والخصوصي بالبينات التحتية 
+                                                    الرياضية الملائمة، والعمل على تمكين التلاميذ من استعمالها بعد انتهاء 
+                                                    الحصص الدراسية؛</span></li><li><span class="ms-rteFontFace-1">إدماج رياضة الأشخاص في وضعية إعاقة في برامج تكوين الأطر لقطاعي الرياضة و التربية الوطنية؛</span></li><li><span class="ms-rteFontFace-1">مضاعفة
+                                                     الجهود لتأهيل التشريع الرياضي، وتعزيز مباردة الإصلاحات الهادفة إلى 
+                                                    إحداث تغيير نوعي في طرق و آليات عمل التنظيمات الرياضية الوطنية، وتوفير 
+                                                    الفضاءات و البنيات التحتية المفتوحة في وجه الشباب؛</span></li><li><span class="ms-rteFontFace-1">تبني
+                                                     مقاربة متكاملة وشمولية مندمجة، بخلق شراكة حقيقية مع الجماعات الترابية، 
+                                                    وتشجيع انخراط مختلف مؤسسات المجتمع المدني في المجال الرياضي؛</span></li><li><span class="ms-rteFontFace-1">إحداث مسالك للتكوين الاحترافي للرياضة وجعلها من روافد الاقتصاد الوطني الخلاقة لفرص الشغل ورفع مساهمتها في الناتج الداخلي الخام.</span></li></ul><p><br><br></p></div><div class="ms-clear"></div></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                            
+                            
+                            
+                            
+                                    
+                                    </div>
+                             </div>
+
+
+
+
+                             
+
+                            
+
+
+                             
+                             
+
+</div>
+
+
+
+
+
+
+
+
+    <!-- content -->
+</div>
+<!-- footer -->
+
+                            </div>
+                            
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+<footer style="padding-top:100px;">
+    <div style="background:#f6a228;color:#fff;text-align:center;line-height:30px;font-size:13px;margin-top:8px">
+        <table style="background-color: orange; margin: auto;">
+            <tr>
+                <td colspan="3">
+                    <strong>ⴰⵎⵔⵏⵓ ⵏ ⵜⵎⴰⵡⴰⵙⵜ - ⵉⵎⵉⵏⵔⵡⴰⵃ - ⵔⴱⴰⴹ ⵜⴱⴰⴹ ⵜⵉⵍⵉⴼⵓⵏ</strong> 0537687219 - المقر المركزي - باب الرواح - الهاتف : 0537687219 - الفاكس : 0537771874
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div style="clear:both"></div>
+    <div  style="text-align: center;">
+        <div class="content" style="display: inline-block; background-color: white; margin-top:30px; margin-bottom:20px; padding-top:30px; padding-bottom:20px; border-radius:5px;font-size:small;">
+            <table>
+                <tr>
+                    <style>
+                        .footer {
+    color: #4d6886;
+    text-decoration: none;
+}
+
+.footer:hover {
+    color: #f46e27;
+    text-decoration: none;
+}
+                    </style>
+                    <td  style="padding-right: 30px; padding-left:20px; vertical-align: top;">
+                        <h4 style="color: #f46e27;">Espaces</h4><hr>
+                        <a class="footer"  href="https://example.com/parents">Espace Parents</a><hr style="border: 0; height: 1px; background: #333; background-image: linear-gradient(to right, #ccc, #333, #ccc);">
+                        <a class="footer"  href="https://example.com/students">Espace Élèves</a><hr style="border: 0; height: 1px; background: #333; background-image: linear-gradient(to right, #ccc, #333, #ccc);">
+                        <a class="footer"  href="https://example.com/hr">Espace Ressources Humaines</a><hr style="border: 0; height: 1px; background: #333; background-image: linear-gradient(to right, #ccc, #333, #ccc);">
+                    </td>
+                    <td style="padding-right: 30px; vertical-align: top;">
+                        <h4 style="color: #f46e27;">Partage</h4><hr>
+                        <a class="footer"  href="https://example.com/news">Toutes les Actualités</a><hr style="border: 0; height: 1px; background: #333; background-image: linear-gradient(to right, #ccc, #333, #ccc);">
+                        <a class="footer"  href="https://example.com/publications">Annonces et Mémorandums</a><hr style="border: 0; height: 1px; background: #333; background-image: linear-gradient(to right, #ccc, #333, #ccc);">
+                        <a class="footer"  href="https://example.com/statistics">Statistiques</a><hr style="border: 0; height: 1px; background: #333; background-image: linear-gradient(to right, #ccc, #333, #ccc);">
+                    </td>
+                    <td style="padding-right: 30px; vertical-align: top;">
+                        <h4 style="color: #f46e27;">Services</h4><hr>
+                        <a class="footer"  href="https://example.com/tenders">Appels d'Offres</a><hr style="border: 0; height: 1px; background: #333; background-image: linear-gradient(to right, #ccc, #333, #ccc);">
+                        <a class="footer"  href="https://example.com/suggestions">Boîte à Suggestions</a><hr style="border: 0; height: 1px; background: #333; background-image: linear-gradient(to right, #ccc, #333, #ccc);">
+                        <a class="footer"  href="https://example.com/directory">Annuaire de l'Administration Centrale</a><hr style="border: 0; height: 1px; background: #333; background-image: linear-gradient(to right, #ccc, #333, #ccc);">
+                    </td>
+                    <td style="padding-right: 30px; vertical-align: top;">
+                        <h4 style="color: #f46e27;">Liens Utiles</h4><hr>
+                        <a class="footer"  href="https://www.sahara.ma/ar/" target="_blank">Portail du Sahara Marocain</a><hr style="border: 0; height: 1px; background: #333; background-image: linear-gradient(to right, #ccc, #333, #ccc);">
+                        <a class="footer"  href="http://www.cg.gov.ma/" target="_blank">Chef du Gouvernement</a><hr style="border: 0; height: 1px; background: #333; background-image: linear-gradient(to right, #ccc, #333, #ccc);">
+                        <a class="footer"  href="http://www.mmsp.gov.ma/" target="_blank">Fonction Publique</a><hr style="border: 0; height: 1px; background: #333; background-image: linear-gradient(to right, #ccc, #333, #ccc);">
+                    </td>
+                    <td style="padding-right: 20px; vertical-align: top;">
+                        <h4 style="color: #f46e27;">Contact et Recherche</h4><hr>
+                        <a class="footer"  href="https://example.com/contact">Contact</a><hr style="border: 0; height: 1px; background: #333; background-image: linear-gradient(to right, #ccc, #333, #ccc);">
+                        <a class="footer"  href="https://example.com/ideas">Boîte à Idées</a><hr style="border: 0; height: 1px; background: #333; background-image: linear-gradient(to right, #ccc, #333, #ccc);">
+                        <a class="footer"  href="https://example.com/search">Moteur de Recherche</a><hr style="border: 0; height: 1px; background: #333; background-image: linear-gradient(to right, #ccc, #333, #ccc);">
+                    </td>
+                </tr>
+            </table>
+        </div>
+        
+                        <div class="copyright">
+                        ⵜⴰⴳⵍⴷⵉⵜ ⵏ ⵍⵎⵖⵔⵉⴱ - ⵜⴰⵎⴰⵡⴰⵙⵜ ⵏ ⵓⵙⴳⵎⵉ ⴰⵏⴰⵎⵓⵔ ⴷ ⵓⵙⵙⵍⵎⴷ ⴰⵎⵣⵡⴰⵔⵓ ⴷ ⵜⵓⵏⵏⵓⵏⵜ © المملكة المغربية - وزارة التربية الوطنية و التعليم الأولي و الرياضة 2024
+                        </div>
+</footer>
+
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
