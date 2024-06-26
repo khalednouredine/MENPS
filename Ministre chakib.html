@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        #header {
+            background-color: #343a40;
+            padding: 10px;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block;
+        }
+        .dropdown-content a {
+            color: white !important;
+        }
+
+        #DeltaSiteLogo img {
+            border-radius: 20px;
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+        }
+        /* Styles pour la barre de navigation centrée */
+
+.navbar {
+    background-color: #343a40; /* Couleur de fond de la barre de navigation */
+    padding: 10px; /* Espacement intérieur */
+}
+
+.navbar-toggler {
+    border: none; /* Retirer la bordure du bouton de basculement */
+}
+
+.navbar-toggler-icon {
+     /* Couleur de l'icône du bouton de basculement */
+}
+
+.navbar-nav {
+    width: 100%;
+    justify-content: center; /* Centrer les éléments de la barre de navigation */
+}
+
+.navbar-nav .nav-item {
+    text-align: center; /* Centrer le texte à l'intérieur des éléments de navigation */
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #ffffff; /* Couleur du texte des liens principaux */
+    padding: 10px 15px; /* Espacement intérieur des liens principaux */
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    background-color: #292b2c; /* Couleur de fond au survol des liens principaux */
+}
+
+.navbar-nav .nav-item .dropdown-menu {
+    background-color: white; /* Couleur de fond des menus déroulants */
+    border: none; /* Pas de bordure autour des menus déroulants */
+}
+
+.navbar-nav .nav-item .dropdown-menu a {
+    color: black; /* Couleur du texte des liens dans les menus déroulants */
+}
+
+.navbar-nav .nav-item .dropdown-menu a:hover {
+    background-color: rgb(235, 235, 235); /* Couleur de fond au survol des liens dans les menus déroulants */
+}
+
+
+    </style>
+</head>
+<body style="background-image: url('images/fond.gif');margin-left:15px;">
+    <div id="container">
+        <div id="header">
+            <div class="content">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <div class="container justify-content-center">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-justify" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5.5 0 0 1 0 1h-11a.5.5.5 0 0 1-.5-.5m0-3a.5.5.5 0 0 1 .5-.5h11a.5.5.5 0 0 1 0 1h-11a.5.5.5 0 0 1-.5-.5"/>
+                            </svg>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html">Accueil</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false">
+                                        Ministère
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown1" style="text-align: center;">
+                                        <a class="dropdown-item" href="#">Structure du secteur</a>
+                                        <a class="dropdown-item" href="BG-ChakibBenmoussa.html">Le Ministre</a>
+                                        <a class="dropdown-item" href="organigramme.html">organiramme</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false">
+                                        Grandes orientations stratégiques
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown2" style="text-align: center;">
+                                        <a class="dropdown-item" href="programme_gouv_FR.pdf">programme gouv</a>
+                                        <a class="dropdown-item" href="FRoute20222026fr.pdf">feuille de route</a>
+                                        
+                                        <a class="dropdown-item" href="Vision_strateg_CSEF16004fr.pdf">vision stratégique</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false">
+                                        Éducation nationale
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown3" style="text-align: center;">
+                                        <a class="dropdown-item" href="systemeducatif-marocain2004.pdf">systeme educatif</a>
+                                        <a class="dropdown-item" href="annee2023.pdf">annee 2023 2024</a>
+                                        <a class="dropdown-item" href="EnsPresco.aspx">Éducation préscolaire</a>
+                                        <a class="dropdown-item" href="ens-preprim.html">Éducation primaire</a>
+                                        <a class="dropdown-item" href="Projet-Curriculum-LagueAmazighe2021.html">Projet de nouveau curriculum de langue amazighe - 2021</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false">
+                                        Sport
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown4" style="text-align: center;">
+                                        <a class="dropdown-item" href="https://www.frmss-dpss.com/الاستقبال/">Fédération royale marocaine du sport scolaire</a>
+                                        <a class="dropdown-item" href="programmegouv.html">Sport dans le programme gouvernemental 2021-2026</a>
+                                        <a class="dropdown-item" href="sportscolaire.html">sport scolaire</a>
+                                        <a class="dropdown-item" href="educationphysique.html">educationphysique</a>
+
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                
+                
+            
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+
+
+        
+                                            
+
+
+     </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+                                <div class="mainbloc popoverWrap" id="mainbloc">
+                                   
+
+                                    <style>
+                                        .btn-primary {
+                                          background-color: #4d6886; /* Couleur bleu foncé pour le fond des boutons sélectionnés */
+                                          color: #ffffff; /* Couleur blanche pour le texte des boutons sélectionnés */
+                                        }
+                                        .btn-primary:hover {
+                                          background-color: #ffffff; /* Couleur bleu foncé pour le fond des boutons sélectionnés */
+                                          color: #4d6886; /* Couleur blanche pour le texte des boutons sélectionnés */
+                                        }
+                                        /* Styles pour améliorer le carrousel et les cartes */
+
+.carousel-inner {
+    margin-bottom: 20px;
+}
+
+.carousel-item .card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-item .card-img-top {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.carousel-item .card-body {
+    background-color: #f8f9fa;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 20px;
+    text-align: center;
+}
+
+.carousel-item .card-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.carousel-item .card-text {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+.card {
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.card .card-title {
+    font-size: medium;
+}
+
+.card-body img {
+    width: 50px;
+    margin: 10px 0;
+}
+
+.card-body hr {
+    margin: 10px 0;
+    border-top: 2px solid #eee;
+}
+
+                                      </style>
+
+
+
+
+                                    
+                                    <div class="row">
+                                        <div class="col-md-4" style="margin-top:5px;"> <!-- 5/12 corresponds approximately to 40% -->
+                                            
+                                            <div class="container mt-3">
+                                                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                                                    <div class="carousel-inner" style="margin-bottom: 20px;">
+                                                        <div class="carousel-item active">
+                                                            <div class="card">
+                                                                <img class="card-img-top" src="images/imag_college.jpg" alt="First slide">
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">Ecole primaire</h5>
+                                                                    <p class="card-text">مدرسة ابتدائية مستقلة</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <div class="card">
+                                                                <img class="card-img-top" src="images/imag_preprim.jpg" alt="Second slide">
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">Délégation Provinciale</h5>
+                                                                    <p class="card-text">النيابة الإقليمية لوزارة التربية الوطنية</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <div class="card">
+                                                                <img class="card-img-top" src="images/imag_secqualif.jpg" alt="Third slide">
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">Lycée collègial</h5>
+                                                                    <p class="card-text">الثانوية الإعدادية للتعليم العام</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <div class="card">
+                                                                <img class="card-img-top" src="images/imag_secqualif.jpg" alt="Fourth slide">
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">Lycée qualifiant</h5>
+                                                                    <p class="card-text">الثانوية الثأهيلية للتعليم العام</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <div class="card">
+                                                                <img class="card-img-top" src="images/imag_secqualif.jpg" alt="Fifth slide">
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">Académie Régionale</h5>
+                                                                    <p class="card-text">الأكاديمية الجهوية للتربية والتكوين</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <div class="card">
+                                                                <img class="card-img-top" src="images/imag_secqualif.jpg" alt="Sixth slide">
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">Lycée de référence</h5>
+                                                                    <p class="card-text">الثانوية الثأهيلية المرجعية</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <div class="card">
+                                                                <img class="card-img-top" src="images/imag_secqualif.jpg" alt="Seventh slide">
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">Centre Régional</h5>
+                                                                    <p class="card-text">المركز الجهوي لمهن التربية والتكوين</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <!-- Script pour activer le carrousel -->
+                                                <script>
+                                                    $(document).ready(function () {
+                                                        $('.carousel').carousel({
+                                                            interval: 3000 // Change l'intervalle de défilement à 3 secondes (3000 ms)
+                                                        });
+                                                    });
+                                                </script>
+
+<div class="card text-center mb-3" style="width: 100%;border-radius: 20px;">
+    <div class="card-body">
+        <a href="presentation.html" target="_blank">
+            <h5 class="card-title"><strong>الموقع</strong></h5>
+        <div class="card text-center mb-3" style="width: 100%; border-radius: 20px;">
+        <div class="card-body">
+            <a target="_blank" href="https://www.google.com/maps/place/D%C3%A9l%C3%A9gation+du+Minist%C3%A8re+de+L'%C3%A9ducation+Nationale/@23.6996508,-15.9307916,17z/data=!4m6!3m5!1s0xc224831d96aaaab:0xe57fc6f0394ca6ab!8m2!3d23.6996508!4d-15.9307916!16s%2Fg%2F11kj8_zs5c?entry=ttu" class="card-text">
+                <img src="images/icone-geolocal.png" alt="Geolocation Icon" style="width: 50px;">
+            </a>
+            
+        </div>
+    </div>
+
+
+        </a>
+         </div>
+          <div class="card-body">
+        <a href="presentation.html" target="_blank">
+            <h5 class="card-title"><strong>مؤسسات</strong></h5>
+        <div class="card text-center mb-3" style="width: 100%; border-radius: 20px;">
+        <div class="card-body">
+            <a href="Academies.html" class="card-text">
+                <img src="images/edifice-icone.gif" alt="Institution Icon" style="width: 50px;">
+            </a>
+            
+        </div>
+    </div>
+         </a>
+         </div>
+</div>
+                                                
+                                                
+                                                <div class="card text-center mb-3" style="width: 100%;border-radius: 20px;">
+                                                    <div class="card-body">
+                                                        <a href="actualités.html" target="_blank">
+                                                        <h2 style="color:#f46e27;">منشورات</h2>
+                                                        <div class="card text-center mb-3" style="width: 100%; border-radius: 20px;">
+                                                        <div class="card-body">
+                                                            <a href="actualités.html" class="card-title" style="color:#4d6886; direction: rtl; list-style-position: inside; display: block; text-align: center;">الأخبار</a>
+                                                            <hr>
+                                                            <div class="overflow-scroll">
+                                                                <div>
+                                                                    
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        </div>
+                                                        </a>
+                                                    </div>
+                                                </div>  
+                                                
+
+                                            </div>
+                            
+                                     </div>
+
+
+
+                                     <style>
+                                        /* Custom styles for the redesigned section */
+
+.card {
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-body a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-pills .nav-link {
+    color: #4d6886;
+    font-size: smaller;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-pills .nav-link.active {
+    background-color: #4d6886;
+    color: #ffffff;
+}
+
+.nav-pills .nav-link:hover:not(.active) {
+    background-color: #4d6886;
+    color: #ffffff;
+}
+
+.tab-content {
+    padding-bottom: 20px;
+}
+
+.service-title {
+    color: #f46e27;
+    direction: rtl;
+    text-align: right;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.service-list {
+    font-size: medium;
+    font-weight: bold;
+    list-style: none;
+    padding-left: 0;
+}
+
+.service-list li {
+    padding-top: 10px;
+    direction: ltr;
+    text-align: right;
+}
+
+.service-list a {
+    color: #4d6886;
+    text-decoration: none;
+}
+
+.service-list a:hover {
+    color: #f46e27;
+}
+
+                                     </style>
+                            
+                            
+
+                                        <div class="col-md-8" style="margin-top:20px;border-radius: 20px;">
+                                            
+                                            <div class="card text-center mb-3" style="width: 100%;border-radius: 20px;">
+                                                <div class="card-body">
+                                                    <a href="presentation.html" target="_blank">
+                                                        <img src="images/logoaccueil.jpg" class="card-img-top" alt="..." style="width: 100%;;border-radius: 20px 20px 0 0;">
+
+                                                    <div class="card text-center mb-3" style="width: 100%; border-radius: 20px;">
+                                                        <a href="presentation.html" target="_blank"><div class="publication">
+                                                        <div class="overflow-scroll">
+                                                            <style>.publication:hover {
+                                                                border-radius: 5px;
+                                                                
+                                                            };
+                                                            </style>
+                                                            <div>
+                                                                
+                                                                    <p style="padding-top: 10px;color: #f46e27;direction: rtl;">Les Nouvelles mises à jours au seins de la Direction provinciale MENPS de Oued Ed-Dahab</p>
+                                                                
+                                                            </div>
+                                                        </div>
+                                                    </div></a>
+                                                    </div>
+                                                    </a>
+                                                </div>
+                                            </div>  
+                                        
+                                            
+                                            <div class="card text-center mb-3" style="width: 100%;border-radius: 20px;">
+                                                <div class="card-body">
+                                                    <div class="rightbloc ar radius shadow bloc2 cal">
+                                                        <div id="titleAri">
+                                                        <div class="BlocTitle">
+                                                            Biographie de M. Chakib BENMOUSSA
+                                                        </div>
+                                                        </div>
+                                                         <div class="BlocText">
+                                                             <a href="index.html" class="LienRetour">Retour</a>
+                                                           <div id="ctl00_PlaceHolderMain_RichHtmlField1_label" style="display:none">Contenu de la page</div><div id="ctl00_PlaceHolderMain_RichHtmlField1__ControlWrapper_RichHtmlField" class="ms-rtestate-field" style="display:inline" aria-labelledby="ctl00_PlaceHolderMain_RichHtmlField1_label"></div>
+                                                        </div>
+                                                        
+                                                        <div class="ms-webpart-zone ms-fullWidth">
+                                                <div id="MSOZoneCell_WebPartWPQ2" class="s4-wpcell-plain ms-webpartzone-cell ms-webpart-cell-vertical ms-fullWidth ">
+                                                    <div class="ms-webpart-chrome ms-webpart-chrome-vertical ms-webpart-chrome-fullWidth ">
+                                                        <div webpartid="3c08362a-c95a-486e-99a6-a089fca1933e" haspers="false" id="WebPartWPQ2" width="100%" class="ms-WPBody noindex " allowdelete="false" style=""><div class="ms-rtestate-field"><div>​<img src="Ministre-Chakibbenmoussa.jpg" alt="Monsieur Chakib Benmoussa, Ministre de l’Education Nationale, du Préscolaire et des Sports" class="ms-rteImage-2 ms-rtePosition-1" style="width: 30%;margin: 5px;"></div> 
+                                            <div> 
+                                               <br> 
+                                            </div> 
+                                            <div> 
+                                               <div style="text-align: justify;"> 
+                                                  <span class="ms-rteFontFace-8">
+                                                     <span class="ms-rteThemeForeColor-5-4" style="text-decoration: #005594;">
+                                                        <strong></strong></span>
+                                                     <br></span></div> 
+                                               <div style="text-align: justify;"> 
+                                                  <br> 
+                                               </div> 
+                                               <div style="text-align: justify;"> 
+                                               <table class="ms-rteTable-0" cellspacing="0" style="width: 29%;"> 
+                                                  <tbody> 
+                                                     <tr class="ms-rteTableEvenRow-0"> 
+                                                        <td class="ms-rteTableEvenCol-0" style="width: 10%;">​<a href="https://www.instagram.com/ch_benmoussa/" title="Page officielle de M. le Ministre" target="_blank"><img src="Insta_logo.png" alt="" style=" width: 50%;margin: 5px;"></a></td> 
+                                                        <td class="ms-rteTableOddCol-0" style="width: 10%;">​<a href="https://www.facebook.com/ChakibBenmoussaMinistre" title="Page officielle de M. le Ministre" target="_blank"><img src="Facebbok.png" alt="" style="width: 50%;margin: 5px;"></a></td> 
+                                                        <td class="ms-rteTableEvenCol-0" style="width: 10%;">​<a href="https://twitter.com/CH_Benmoussa" title="Page officielle de M. le Ministre" target="_blank"><img src="Twit-logo.png" alt="" style="width: 50%;margin: 5px;"></a></td> 
+                                                     </tr> 
+                                                  </tbody> 
+                                               </table> 
+                                            </div>
+                                               <div style="text-align: justify;"> 
+                                                  <br> 
+                                                  <span class="ms-rteFontFace-8"></span></div> 
+                                               <div style="text-align: justify;" > 
+                                                  <span  class="ms-rteFontFace-8">
+                                                     <span class="ms-rteForeColor-3 ms-rteFontFace-1 ms-rteFontSize-1" style="text-decoration: #ffa500;">
+                                                        <strong>
+                                                           <span class="ms-rteFontFace-8">
+                                                              <span  class="ms-rteThemeForeColor-5-4" style="text-decoration: #005594;">
+                                                                 <strong>Portrait académique et professionnel de Monsieur Chakib Benmoussa, Ministre de l’Education Nationale, du Préscolaire et des Sports</strong></span></span><br></strong></span></span></div>
+                                               <div style="text-align: justify;">
+                                                  <span class="ms-rteFontFace-8"><span class="ms-rteForeColor-3 ms-rteFontFace-1 ms-rteFontSize-1" style="text-decoration: #ffa500;"><strong><br></strong></span></span></div>
+                                               <div style="text-align: justify;">
+                                                  <span class="ms-rteFontFace-8"><span class="ms-rteForeColor-3 ms-rteFontFace-1 ms-rteFontSize-1" style="text-decoration: #ffa500;"><strong>&gt;&gt;</strong></span> Sa Majesté le Roi Mohammed VI, que Dieu l’assiste, a nommé le jeudi 07 octobre 2021, Monsieur Chakib Benmoussa Ministre de l’Education Nationale, du Préscolaire et des Sports.<br></span></div> 
+                                               <div style="text-align: justify;"> 
+                                                  <br> 
+                                                  <span class="ms-rteFontFace-8"></span></div> 
+                                               <div style="text-align: justify;"> 
+                                                  <span class="ms-rteFontFace-8">
+                                                     <span class="ms-rteFontFace-8">
+                                                        <span class="ms-rteForeColor-3 ms-rteFontFace-1 ms-rteFontSize-1" style="text-decoration: #ffa500;">
+                                                           <strong>&gt;&gt;</strong></span></span> Monsieur Chakib Benmoussa, et jusqu'à sa nomination, avait été chargé par le Souverain de présider&nbsp; la Commission Spéciale sur le Modèle de Développement depuis le 19 novembre 2019. 
+                                                     <br></span></div> 
+                                               <div style="text-align: justify;"> 
+                                                  <br> 
+                                                  <span class="ms-rteFontFace-8"></span></div> 
+                                               <div style="text-align: justify;"> 
+                                                  <span class="ms-rteFontFace-8"> 
+                                                     <span class="ms-rteFontFace-8"> 
+                                                        <span class="ms-rteForeColor-3 ms-rteFontFace-1 ms-rteFontSize-1" style="text-decoration: #ffa500;"> 
+                                                           <strong>&gt;&gt;</strong></span></span> M. Chakib Benmoussa, né à Fès le 24 février 1958, marié et père de trois enfants, est titulaire des diplômes d'ingénieur de l'Ecole Polytechnique de Paris en 1979 , de l’Ecole Nationale des Ponts et Chaussées-Paris en 1981 et d'un « Master of Science » du Massachussetts Institute of Technology-USA en 1983 de l’Université de Cambridge, États-Unis , ainsi que d'un diplôme en gestion de projets de l'Institut Supérieur de Commerce et d'Administration des Entreprises, ISCAE, en 1986. 
+                                                     <br></span></div> 
+                                               <div style="text-align: justify;"> 
+                                                  <br> 
+                                                  <span class="ms-rteFontFace-8"></span></div> 
+                                               <div style="text-align: justify;"> 
+                                                  <span class="ms-rteFontFace-8"> 
+                                                     <span class="ms-rteFontFace-8"> 
+                                                        <span class="ms-rteForeColor-3 ms-rteFontFace-1 ms-rteFontSize-1" style="text-decoration: #ffa500;"> 
+                                                           <strong>&gt;&gt;</strong></span></span> Assistant de recherche au laboratoire d'hydrodynamique (MIT) de 1981 à 1983, il occupa la fonction de responsable de la Division « Méthodes de gestion » à la Direction des Routes jusqu'en 1985, puis d’ingénieur consultant au bureau d'études Conseil, Ingénierie et Développement (CID) au Maroc jusqu'en 1987.</span></div> 
+                                               <div style="text-align: justify;"> 
+                                                  <span class="ms-rteFontFace-8">
+                                                     <br></span></div> 
+                                               <div style="text-align: justify;"> 
+                                                  <span class="ms-rteFontFace-8">
+                                                     <span class="ms-rteFontFace-8">
+                                                        <span class="ms-rteForeColor-3 ms-rteFontFace-1 ms-rteFontSize-1" style="text-decoration: #ffa500;">
+                                                           <strong>&gt;&gt;</strong></span></span> Il devient alors Directeur de la Planification et des Etudes, un poste qu’il occupa jusqu'en 1989, puis Directeur des Routes et de la Circulation Routière au Ministère de l'Équipement et des Transports jusqu'en 1995.<br></span></div> 
+                                               <div style="text-align: justify;"> 
+                                                  <br> 
+                                                  <span class="ms-rteFontFace-8"></span></div> 
+                                               <div style="text-align: justify;"> 
+                                                  <span class="ms-rteFontFace-8">
+                                                     <span class="ms-rteFontFace-8">
+                                                        <span class="ms-rteForeColor-3 ms-rteFontFace-1 ms-rteFontSize-1" style="text-decoration: #ffa500;">
+                                                           <strong>&gt;&gt;</strong></span></span> M. Chakib Benmoussa fut&nbsp; Secrétaire Général du Département du Premier Ministre de 1995 à 1998 et Président-Délégué de SONASID&nbsp; de 1998 à 2000, puis président de Tanger Free Zone. </span></div> 
+                                               <div style="text-align: justify;"> 
+                                                  <span class="ms-rteFontFace-8">M. Chakib Benmoussa est depuis 2000 membre du comité exécutif du groupe ONA. En décembre 2002, il est nommé Secrétaire Général du Ministère de l’Intérieur.<br></span></div> 
+                                               <div style="text-align: justify;"> 
+                                                  <br> 
+                                                  <span class="ms-rteFontFace-8"></span></div> 
+                                               <div style="text-align: justify;"> 
+                                                  <span class="ms-rteFontFace-8">
+                                                     <span class="ms-rteFontFace-8">
+                                                        <span class="ms-rteForeColor-3 ms-rteFontFace-1 ms-rteFontSize-1" style="text-decoration: #ffa500;">
+                                                           <strong>&gt;&gt;</strong></span></span> M. Chakib Benmoussa est aussi membre du Bureau de la CGEM, du Comité ministériel de l'Education et de la Formation et du Comité de soutien permanent de la Fondation Mohammed V.<br></span></div> 
+                                               <div style="text-align: justify;"> 
+                                                  <br> 
+                                                  <span class="ms-rteFontFace-8"></span></div> 
+                                               <div style="text-align: justify;"> 
+                                                  <span class="ms-rteFontFace-8">
+                                                     <span class="ms-rteFontFace-8">
+                                                        <span class="ms-rteForeColor-3 ms-rteFontFace-1 ms-rteFontSize-1" style="text-decoration: #ffa500;">
+                                                           <strong>&gt;&gt;</strong></span></span> Il occupa également, en décembre 2002, le poste de Wali, Secrétaire Général du Ministère de l'Intérieur.</span></div> 
+                                               <div style="text-align: justify;"> 
+                                                  <span class="ms-rteFontFace-8">Monsieur Benmoussa avait auparavant gagné la confiance Royale avec sa nomination au poste de Ministre de l'Intérieur entre 2006 et 2010.<br></span></div> 
+                                               <div style="text-align: justify;"> 
+                                                  <br> 
+                                                  <span class="ms-rteFontFace-8"></span></div> 
+                                               <div style="text-align: justify;"> 
+                                                  <span class="ms-rteFontFace-8">
+                                                     <span class="ms-rteFontFace-8">
+                                                        <span class="ms-rteForeColor-3 ms-rteFontFace-1 ms-rteFontSize-1" style="text-decoration: #ffa500;">
+                                                           <strong>&gt;&gt;</strong></span></span> En 21 février 2011, il est nommé par Sa Majesté le Roi Mohammed VI Président du Conseil Economique et Social,&nbsp; puis Ambassadeur du Maroc en France et à Monaco depuis mars 2013.</span></div> 
+                                               <div style="text-align: justify;"> 
+                                                  <br> 
+                                               </div> 
+                                               <div style="text-align: justify;"> 
+                                                  <br> 
+                                               </div> 
+                                               <div style="text-align: justify;"> 
+                                                  <br> 
+                                               </div> 
+                                               <div style="text-align: justify;"> 
+                                                  <br> 
+                                               </div> 
+                                               <div style="text-align: justify;"> 
+                                                  <br> 
+                                               </div> 
+                                               <div style="text-align: justify;"> 
+                                                  <br> 
+                                               </div> 
+                                               <div style="text-align: justify;"> 
+                                                  <br> 
+                                               </div> 
+                                               <div style="text-align: justify;"> 
+                                                  <br> 
+                                               </div> 
+                                               <div style="text-align: justify;"> 
+                                                  <br> 
+                                                  <span class="ms-rteFontFace-8"></span></div> 
+                                               <br> 
+                                            </div></div><div class="ms-clear"></div></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                            
+                            
+                            
+                            
+                                    
+                                    </div>
+                             </div>
+
+
+
+
+                             
+
+                            
+
+
+                             
+                             
+
+</div>
+
+
+
+
+
+
+
+
+    <!-- content -->
+</div>
+<!-- footer -->
+
+                            </div>
+                            
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+<footer style="padding-top:100px;">
+    <div style="background:#f6a228;color:#fff;text-align:center;line-height:30px;font-size:13px;margin-top:8px">
+        <table style="background-color: orange; margin: auto;">
+            <tr>
+                <td colspan="3">
+                    <strong>ⴰⵎⵔⵏⵓ ⵏ ⵜⵎⴰⵡⴰⵙⵜ - ⵉⵎⵉⵏⵔⵡⴰⵃ - ⵔⴱⴰⴹ ⵜⴱⴰⴹ ⵜⵉⵍⵉⴼⵓⵏ</strong> 0537687219 - المقر المركزي - باب الرواح - الهاتف : 0537687219 - الفاكس : 0537771874
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div style="clear:both"></div>
+    <div  style="text-align: center;">
+        <div class="content" style="display: inline-block; background-color: white; margin-top:30px; margin-bottom:20px; padding-top:30px; padding-bottom:20px; border-radius:5px;font-size:small;">
+            <table>
+                <tr>
+                    <style>
+                        .footer {
+    color: #4d6886;
+    text-decoration: none;
+}
+
+.footer:hover {
+    color: #f46e27;
+    text-decoration: none;
+}
+                    </style>
+                    <td  style="padding-right: 30px; padding-left:20px; vertical-align: top;">
+                        <h4 style="color: #f46e27;">Espaces</h4><hr>
+                        <a class="footer"  href="https://www.cpge.ac.ma/">CGPE</a><hr style="border: 0; height: 1px; background: #333; background-image: linear-gradient(to right, #ccc, #333, #ccc);">
+                        <a class="footer"  href="http://www.cg.gov.ma/" target="_blank">Chef du Gouvernement</a><hr style="border: 0; height: 1px; background: #333; background-image: linear-gradient(to right, #ccc, #333, #ccc);">
+
+                    </td>
+                    <td style="padding-right: 30px; vertical-align: top;">
+                        <h4 style="color: #f46e27;">Partage</h4><hr>
+                        <a class="footer"  href="actualités.html">Toutes les Actualités</a><hr style="border: 0; height: 1px; background: #333; background-image: linear-gradient(to right, #ccc, #333, #ccc);">
+                        <a class="footer"  href="services.docx">Nos Services</a><hr style="border: 0; height: 1px; background: #333; background-image: linear-gradient(to right, #ccc, #333, #ccc);">
+                        <a class="footer"  href="#">Nos Contacts</a><hr style="border: 0; height: 1px; background: #333; background-image: linear-gradient(to right, #ccc, #333, #ccc);">
+
+                    </td>
+                    <td style="padding-right: 30px; vertical-align: top;">
+                        <h4 style="color: #f46e27;">Services</h4><hr>
+                        <a class="footer"  href="https://insat.men.gov.ma/insat/Pages/Common/Accueil.aspx">service INSAT</a><hr style="border: 0; height: 1px; background: #333; background-image: linear-gradient(to right, #ccc, #333, #ccc);">
+                        <a class="footer"  href="https://ajal.finances.gov.ma/ajal/login" target="_blank">réclamation des fournisseurs</a><hr style="border: 0; height: 1px; background: #333; background-image: linear-gradient(to right, #ccc, #333, #ccc);">
+
+                    </td>
+                    <td style="padding-right: 30px; vertical-align: top;">
+                        <h4 style="color: #f46e27;">Liens Utiles</h4><hr>
+                        <a class="footer"  href="http://www.mmsp.gov.ma/" target="_blank">Fonction Publique</a><hr style="border: 0; height: 1px; background: #333; background-image: linear-gradient(to right, #ccc, #333, #ccc);">
+                        <a class="footer"  href="https://www.emploi-public.ma/ar/index.asp" target="_blank">Emploi Publique</a><hr style="border: 0; height: 1px; background: #333; background-image: linear-gradient(to right, #ccc, #333, #ccc);">
+                        <a class="footer"  href="https://www.marchespublics.gov.ma/pmmp/?lang=ar" target="_blank">marchés Publique</a><hr style="border: 0; height: 1px; background: #333; background-image: linear-gradient(to right, #ccc, #333, #ccc);">
+                    </td>
+                    <td style="padding-right: 20px; vertical-align: top;">
+                        <h4 style="color: #f46e27;">Contact et Recherche</h4><hr>
+                        <a class="footer"  href="ehimaya.html" target="_blank">e-himaya</a><hr style="border: 0; height: 1px; background: #333; background-image: linear-gradient(to right, #ccc, #333, #ccc);">
+                        <a class="footer"  href="https://www.sahara.ma/ar/" target="_blank">Portail du Sahara Marocain</a><hr style="border: 0; height: 1px; background: #333; background-image: linear-gradient(to right, #ccc, #333, #ccc);">
+                    </td>
+                </tr>
+            </table>
+        </div>
+        
+                        <div class="copyright">
+                        ⵜⴰⴳⵍⴷⵉⵜ ⵏ ⵍⵎⵖⵔⵉⴱ - ⵜⴰⵎⴰⵡⴰⵙⵜ ⵏ ⵓⵙⴳⵎⵉ ⴰⵏⴰⵎⵓⵔ ⴷ ⵓⵙⵙⵍⵎⴷ ⴰⵎⵣⵡⴰⵔⵓ ⴷ ⵜⵓⵏⵏⵓⵏⵜ © المملكة المغربية - وزارة التربية الوطنية و التعليم الأولي و الرياضة 2024
+                        </div>
+</footer>
+
+    </body>
+</html>
